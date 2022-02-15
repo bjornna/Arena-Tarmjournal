@@ -1,0 +1,430 @@
+archetype (adl_version=1.4; uid=2e3c020f-1b75-4073-beaf-fba54effbcfe)
+	openEHR-EHR-CLUSTER.simple_endoscopic_score_for_crohn_disease_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2021-05-10">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"0">
+	other_contributors = <"Morten Hørthe <mho@dips.no>", ...>
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["references"] = <"https://www.igibdscores.it/en/info-sescd.html
+
+Daperno M, D'Haens G, Van Assche G, Baert F, Bulois P, Maunoury V, Sostegni R, Rocca R, Pera A, Gevers A, Mary JY, Colombel JF, Rutgeerts P. Development and validation of a new, simplified endoscopic activity score for Crohn's disease: the SES-CD. Gastrointest Endosc 2004; 60 (4): 505-512.
+
+Moskovitz DN, Daperno M, Van Assche G. Defining and validating cut-offs for the Simple Endocopic Score for Crohn's Disease. Gastroenterology 2007; 132: S1097.">
+		["MD5-CAM-1.0.1"] = <"7a6330e0df9f21cef676388e489b33bb">
+		["build_uid"] = <"6b3bdde8-618a-3438-bbe8-ef04e08b99c0">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Simple Endoscopic Score for Crohn Disease
+		items cardinality matches {1..*; unordered} matches {
+			CLUSTER[at0026] occurrences matches {0..5} matches {    -- Beskrivelse per segment
+				items cardinality matches {5..*; unordered} matches {
+					ELEMENT[at0027] matches {    -- Segment som beskrives
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0028,    -- Terminale ileum
+									at0029,    -- Høyre kolon
+									at0030,    -- Transversum
+									at0031,    -- Venstre kolon
+									at0032]    -- Rektum
+								}
+							}
+						}
+					}
+					ELEMENT[at0037] matches {    -- Overflate med innflammert tarm
+						value matches {
+							0|[local::at0038],
+							1|[local::at0039],
+							2|[local::at0040],
+							3|[local::at0041]
+						}
+					}
+					ELEMENT[at0042] matches {    -- Størrelse på største ulcus
+						value matches {
+							0|[local::at0043],
+							1|[local::at0044],
+							2|[local::at0045],
+							3|[local::at0046]
+						}
+					}
+					ELEMENT[at0047] matches {    -- Overflate med ulcerasjoner
+						value matches {
+							0|[local::at0048],
+							1|[local::at0049],
+							2|[local::at0050],
+							3|[local::at0051]
+						}
+					}
+					ELEMENT[at0052] matches {    -- Stenose
+						value matches {
+							0|[local::at0053],
+							1|[local::at0054],
+							2|[local::at0055],
+							3|[local::at0056]
+						}
+					}
+				}
+			}
+			ELEMENT[at0033] occurrences matches {0..1} matches {    -- Total SES-CD score
+				value matches {
+					DV_COUNT matches {
+						magnitude matches {|>=0|}
+					}
+				}
+			}
+			ELEMENT[at0057] occurrences matches {0..1} matches {    -- Alvorlighetsgrad
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0058,    -- Remisjon
+							at0059,    -- Mild endoskopisk aktivitet
+							at0060,    -- Moderat endoskopisk aktivitet
+							at0061]    -- Alvorlig endoskopisk aktivitet
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"SNOMED-CT", ...>
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Simple Endoscopic Score for Crohn Disease">
+					description = <"Simple Endoscopic Score for Crohn Disease (SES-CD) vurderer størrelsen på magesår, den sårede overflaten, den endoskopiske forlengelsen og tilstedeværelsen av stenose. Det er utviklet som et alternativ til CDEIS, det er enklere og derfor mer egnet til rutinemessig bruk. Under valideringsprosessen ble det sett en sterk sammenheng mellom SES-CD og CDEIS (r = 0,920). I tillegg korrelerer SES-CD med kliniske parametere og serumnivåer av C-reaktivt protein.">
+				>
+				["at0026"] = <
+					text = <"Beskrivelse per segment">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"Segment som beskrives">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"Terminale ileum">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Høyre kolon">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Transversum">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Venstre kolon">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Rektum">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Total SES-CD score">
+					description = <"*">
+					comment = <"Beregnet verdi: Summen for variabel 43-46 multiplisert med 1,007, minus antallet valgte segment (42) multiplisert med 1,556.
+
+Beregnes dersom \"Crohn Sykdom\" er valgt under MUCOSA
+
+">
+				>
+				["at0037"] = <
+					text = <"Overflate med innflammert tarm">
+					description = <"Overlflate med innflammert tarm">
+					comment = <"Må velges for hver av de avkryssede alternativene for \"Utbredelse av inflammasjon (segment)\" Ett valg mulig.">
+				>
+				["at0038"] = <
+					text = <"Ingen">
+					description = <"Ingen overflate med inflammert tarm">
+				>
+				["at0039"] = <
+					text = <"< 10 %">
+					description = <"< 10 % overflate med inflammert tarm">
+				>
+				["at0040"] = <
+					text = <"10-30 %">
+					description = <"10-30 % overflate med inflammert tarm">
+				>
+				["at0041"] = <
+					text = <"> 30 %">
+					description = <"> 30 % overflate med inflammert tarm">
+				>
+				["at0042"] = <
+					text = <"Størrelse på største ulcus">
+					description = <"Størrelse på største ulcus">
+				>
+				["at0043"] = <
+					text = <"ingen">
+					description = <"Ingen ulcus">
+				>
+				["at0044"] = <
+					text = <"< 5 mm">
+					description = <"Største ulcus < 5 mm">
+				>
+				["at0045"] = <
+					text = <"5-20 mm">
+					description = <"Største ulcus 5-20 mm">
+				>
+				["at0046"] = <
+					text = <"> 20 mm">
+					description = <"Største ulcus > 20 mm">
+				>
+				["at0047"] = <
+					text = <"Overflate med ulcerasjoner">
+					description = <"Overflate med ulcerasjoner">
+				>
+				["at0048"] = <
+					text = <"ingen">
+					description = <"Ingen overflate med ulcerasjoner">
+				>
+				["at0049"] = <
+					text = <"<50%">
+					description = <"<50% overflate med ulcerasjoner">
+				>
+				["at0050"] = <
+					text = <"50-70%">
+					description = <"50-70% overflate med ulcerasjoner">
+				>
+				["at0051"] = <
+					text = <">70%">
+					description = <">70% overflate med ulcerasjoner">
+				>
+				["at0052"] = <
+					text = <"Stenose">
+					description = <"stenosefunn">
+				>
+				["at0053"] = <
+					text = <"Ingen">
+					description = <"Ingen stenose">
+				>
+				["at0054"] = <
+					text = <"en-passabel for skopet">
+					description = <"en stenose -passabel for skopet">
+				>
+				["at0055"] = <
+					text = <"Flere -passabel for skopet">
+					description = <"Flere stenoser -passabel for skopet">
+				>
+				["at0056"] = <
+					text = <"Stenose(er) som ikke kan passeres">
+					description = <"Funn av stenoser som ikke lar seg passere med skopet">
+				>
+				["at0057"] = <
+					text = <"Alvorlighetsgrad">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Remisjon">
+					description = <"SES-CD 0 - 2">
+				>
+				["at0059"] = <
+					text = <"Mild endoskopisk aktivitet">
+					description = <"SES-CD 3 - 6">
+				>
+				["at0060"] = <
+					text = <"Moderat endoskopisk aktivitet">
+					description = <"SES-CD 7 - 15">
+				>
+				["at0061"] = <
+					text = <"Alvorlig endoskopisk aktivitet">
+					description = <"SES-CD > 15">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Simple Endoscopic Score for Crohn Disease">
+					description = <"The Simple Endoscopic Score for Crohn Disease (SES-CD) assesses the size of mucosal ulcers, the ulcerated surface, the endoscopic extension and the presence of stenosis. It has been developed as an alternative to CDEIS, it is simpler and therefore more suited to a routine use. During the validation process, a strong correlation between SES-CD and CDEIS (r = 0.920) as been seen. In addition, SES-CD correlates with clinical parameters and serum levels of C-reactive protein.">
+				>
+				["at0026"] = <
+					text = <"Description per segment">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Segment described">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"Terminal ileum">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Right colon">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Transversum">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Left colon">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Rectum">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Total SES-CD score">
+					description = <"*">
+					comment = <"*Beregnet verdi: Summen for variabel 43-46 multiplisert med 1,007, minus antallet valgte segment (42) multiplisert med 1,556.
+
+Beregnes dersom \"Crohn Sykdom\" er valgt under MUCOSA
+
+ (nb)">
+				>
+				["at0037"] = <
+					text = <"Surface involved by disease">
+					description = <"Surface with inflamed intestine.">
+					comment = <"*Må velges for hver av de avkryssede alternativene for \"Utbredelse av inflammasjon (segment)\" Ett valg mulig. (nb)">
+				>
+				["at0038"] = <
+					text = <"None">
+					description = <"No surface with inflamed intestine. ">
+				>
+				["at0039"] = <
+					text = <"< 10 %">
+					description = <"<10 % surface with inflamed intestine.">
+				>
+				["at0040"] = <
+					text = <"10-30 %">
+					description = <"10-30 % surface with inflamed intestine.">
+				>
+				["at0041"] = <
+					text = <"> 30 %">
+					description = <">30 % surface with inflamed intestine.">
+				>
+				["at0042"] = <
+					text = <"Size of largest ulcus">
+					description = <"Size of largest ulcus.">
+				>
+				["at0043"] = <
+					text = <"None">
+					description = <"No ulcus.">
+				>
+				["at0044"] = <
+					text = <"< 5 mm">
+					description = <"Largest ulcus <5 mm.">
+				>
+				["at0045"] = <
+					text = <"5-20 mm">
+					description = <"Largest ulcus 5-20 mm.">
+				>
+				["at0046"] = <
+					text = <"> 20 mm">
+					description = <"Largest ulcus >20 mm.">
+				>
+				["at0047"] = <
+					text = <"Surface involved by ulcerations">
+					description = <"Surface involved by ulcerations.">
+				>
+				["at0048"] = <
+					text = <"None">
+					description = <"No surface with ulcerations.">
+				>
+				["at0049"] = <
+					text = <"<50%">
+					description = <"<50% surface with ulcerations.">
+				>
+				["at0050"] = <
+					text = <"50-70%">
+					description = <"50-70% surface with ulcerations.">
+				>
+				["at0051"] = <
+					text = <">70%">
+					description = <">70% surface with ulcerations.">
+				>
+				["at0052"] = <
+					text = <"Narrowings">
+					description = <"Stenosis findings.">
+				>
+				["at0053"] = <
+					text = <"None">
+					description = <"No stenosis.">
+				>
+				["at0054"] = <
+					text = <"Single stenosis, can be passed">
+					description = <"Single stenosis, can be passed.">
+				>
+				["at0055"] = <
+					text = <"Multiple stenosis, can be passed">
+					description = <"Multiple stenosis, can be passed.">
+				>
+				["at0056"] = <
+					text = <"Cannot be passed">
+					description = <"Findings of stenosis which cannot be passed.">
+				>
+				["at0057"] = <
+					text = <"Grade">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Remision">
+					description = <"SES-CD 0-2.">
+				>
+				["at0059"] = <
+					text = <"Mild endoscopic activity">
+					description = <"SES-CD 3-6.">
+				>
+				["at0060"] = <
+					text = <"Moderate endoscopic activity">
+					description = <"SES-CD 7-15.">
+				>
+				["at0061"] = <
+					text = <"Severe endoscopic activity">
+					description = <"SES-CD >15.">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0033"] = <[SNOMED-CT::897114006]>
+				["at0037"] = <[SNOMED-CT::9811000202103]>
+				["at0028"] = <[SNOMED-CT::85774003]>
+				["at0029"] = <[SNOMED-CT::51342009]>
+				["at0030"] = <[SNOMED-CT::485005]>
+				["at0031"] = <[SNOMED-CT::55572008]>
+				["at0032"] = <[SNOMED-CT::34402009]>
+			>
+		>
+	>
