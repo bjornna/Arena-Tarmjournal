@@ -1,0 +1,86 @@
+archetype (adl_version=1.4; uid=a9d47b61-c873-47eb-a57c-b75355eea67f)
+	openEHR-EHR-CLUSTER.adhoc_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2021-06-28">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Brukes som en generisk \"seksjonsoverskrift\" som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.">
+			use = <"Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".">
+			misuse = <"Skal ikke stå med uendret navn i en templat.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Used as a generic \"section heading\" to be renamed in a template to fit in a given clinical context.">
+			copyright = <"© openEHR Foundation">
+			use = <"Used to create a section heading in a template, whose name is changed to fit the relevant clinical context. For example: \"Template header\" changed to \"Findings by examination\", \"Anamnesis\", \"Personal information\" or \"Summary\".">
+			misuse = <"Must not be left unchanged in a template.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"b439c6ac5802911b1c629d7ff4d35f7f">
+		["build_uid"] = <"25be1a87-9cf6-3dd6-9cef-cbc3abf6a99b">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Overskrift
+		items cardinality matches {1..*; unordered} matches {
+			allow_archetype CLUSTER[at0001] occurrences matches {0..*} matches {    -- Detaljer
+				include
+					archetype_id/value matches {/.*/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Overskrift">
+					description = <"En generisk struktur for å lage overskrifter. Det gis nytt navn i en templat for å passe i en gitt klinisk kontekst.">
+				>
+				["at0001"] = <
+					text = <"Detaljer">
+					description = <"En åpne slot for å legge til strukturerte detaljer tilpasset det aktuelle kliniske området. ">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Heading">
+					description = <"A generic structure for making headlines. A template is renamed to fit in a given clinical context.">
+				>
+				["at0001"] = <
+					text = <"Details">
+					description = <"An open slot for adding structured details adapted to the relevant clinical area.">
+				>
+			>
+		>
+	>
