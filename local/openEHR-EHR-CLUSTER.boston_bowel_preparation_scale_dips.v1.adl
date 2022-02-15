@@ -1,0 +1,268 @@
+archetype (adl_version=1.4; uid=9f1fe61c-be95-3c60-9ac2-e623a2a54c8d)
+	openEHR-EHR-CLUSTER.boston_bowel_preparation_scale_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2020-10-26">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"0">
+	other_contributors = <"Morten Hørthe <mho@dips.no>", ...>
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			use = <"Boston Bowel Preparation Scale (BBPS) er beskrevet i detalj tidligere. Kort fortalt blir BBPS påført under tilbaketrekningsfasen av koloskopi, etter at endoskopisten har utført vask, sug og andre rengjøringsmanøvrer. God klinisk praksis tilsier at endoskopisten alltid skal rense så mye som mulig for å oppnå høyest mulig poengsum og sikre best mulig tarmrens. Hvert av de tre segmentene i tykktarmen (høyre, inkludert cecum og stigende colon; tverrgående, inkludert lever- og miltbøyninger; og venstre, inkludert synkende colon, sigmoid og rectum) får en score fra 0–3 definert som følger:
+
+0 = Uforberedt kolon-segment med slimhinne ikke sett på grunn av solid avføring som ikke kan ryddes.
+
+1 = Del av slimhinnen i tykktarmssegmentet sett, men andre områder av tykktarmssegmentet er ikke godt sett på grunn av flekker, gjenværende avføring og / eller ugjennomsiktig væske.
+
+2 = Mindre mengder gjenværende flekker, små fragmenter av avføring og / eller ugjennomsiktig væske, men slimhinnen i tykktarmen er godt sett.
+
+3 = Hele slimhinnen i kolon-segmentet sett godt uten gjenværende flekker, små fragmenter av avføring eller ugjennomsiktig væske.
+
+Hver av de tre segmentpoengene summeres deretter til en totalpoengsum på 0–9, der 0 er uforberedt og 9 er helt rene. Hvis en endoskopist avbryter en prosedyre på grunn av utilstrekkelig forberedelse, får ikke-visualiserte proksimale segmenter poengsummen 0. En instruksjonsvideo som viser hvordan du bruker BBPS er tilgjengelig online på http://www.bmc.org/gastroenterology / forskning.htm.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+			use = <"The Boston Bowel Preparation Scale (BBPS) has been described in detail previously. Briefly,the BBPS is applied during the withdrawal phase of colonoscopy, after all washing, suctioning, and other cleaning maneuvers have been performed by the endoscopist. Good clinical practice dictates that the endoscopist should always clean as much as possible to obtain the highest possible score and ensure the best possible bowel cleanliness. Each of the three segments of the colon (right, including cecum and ascending colon; transverse, including hepatic and splenic flexures; and left, including descending colon, sigmoid and rectum) is given a score from 0–3 defined as follows:
+
+0 = Unprepared colon segment with mucosa not seen due to solid stool that cannot be cleared.
+
+1 = Portion of mucosa of the colon segment seen, but other areas of the colon segment not well seen due to staining, residual stool and/or opaque liquid.
+
+2 = Minor amount of residual staining, small fragments of stool and/or opaque liquid, but mucosa of colon segment seen well.
+
+3 = Entire mucosa of colon segment seen well with no residual staining, small fragments of stool or opaque liquid.
+
+Each of the three segment scores is then summed for a total score of 0–9, where 0 is unprepared and 9 is entirely clean. If an endoscopist aborts a procedure due to an inadequate preparation, then any non-visualized proximal segments are assigned a score of 0. An instructional video demonstrating how to use the BBPS is available online at http://www.bmc.org/gastroenterology/research.htm.">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"72cf8cc9058b4c4fcd1db9cbe7cd1fd2">
+		["build_uid"] = <"ff7fb50d-e48f-3171-aae4-dcf8ee57dde1">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Boston Bowel Preparation Scale
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Høyre kolon
+				value matches {
+					3|[local::at0005],
+					2|[local::at0004],
+					1|[local::at0003],
+					0|[local::at0002]
+				}
+			}
+			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Transversum
+				value matches {
+					3|[local::at0014],
+					2|[local::at0015],
+					1|[local::at0016],
+					0|[local::at0017]
+				}
+			}
+			ELEMENT[at0018] occurrences matches {0..1} matches {    -- Venstre kolon
+				value matches {
+					3|[local::at0019],
+					2|[local::at0020],
+					1|[local::at0021],
+					0|[local::at0022]
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Total score
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Kommentar
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"SNOMED-CT", ...>
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Boston Bowel Preparation Scale">
+					description = <"Boston Bowel Preparation Scale (BBPS) er en ny skala for tarmens renslighet som har gjennomgått delvis validering tidligere.">
+				>
+				["at0001"] = <
+					text = <"Høyre kolon">
+					description = <"Inkludert cecum og tykktarm stigende">
+				>
+				["at0002"] = <
+					text = <"Mucosa ikke sett">
+					description = <"Fast avføring tilstede.">
+				>
+				["at0003"] = <
+					text = <"Mucosa delvis sett">
+					description = <"Farget væske og avføringsrester tilstede">
+				>
+				["at0004"] = <
+					text = <"Mucosa godt visualisert">
+					description = <"Små mengder farget væske eller avføring">
+				>
+				["at0005"] = <
+					text = <"Mucosa komplett visualisert">
+					description = <"Ingen farget væske eller avføring">
+				>
+				["at0008"] = <
+					text = <"Kommentar">
+					description = <"Fritekstvurdering av tømmingen i det aktuelle området. ">
+					comment = <"Valgfri fritekst. ">
+				>
+				["at0012"] = <
+					text = <"Total score">
+					description = <"Den samlede score for BBS">
+				>
+				["at0013"] = <
+					text = <"Transversum">
+					description = <"Inkludert lever- og miltbøyninger">
+				>
+				["at0014"] = <
+					text = <"Mucosa komplett visualisert">
+					description = <"Ingen farget væske eller avføring">
+				>
+				["at0015"] = <
+					text = <"Mucosa godt visualisert">
+					description = <"Små mengder farget væske eller avføring">
+				>
+				["at0016"] = <
+					text = <"Mucosa delvis sett">
+					description = <"Farget væske og avføringsrester tilstede">
+				>
+				["at0017"] = <
+					text = <"Mucosa ikke sett">
+					description = <"Fast avføring tilstede.">
+				>
+				["at0018"] = <
+					text = <"Venstre kolon">
+					description = <"I
+nkludert synkende kolon, sigmoid og endetarm">
+				>
+				["at0019"] = <
+					text = <"Mucosa komplett visualisert">
+					description = <"Ingen farget væske eller avføring">
+				>
+				["at0020"] = <
+					text = <"Mucosa godt visualisert">
+					description = <"Små mengder farget væske eller avføring">
+				>
+				["at0021"] = <
+					text = <"Mucosa delvis sett">
+					description = <"Farget væske og avføringsrester tilstede">
+				>
+				["at0022"] = <
+					text = <"Mucosa ikke sett">
+					description = <"Fast avføring tilstede.">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Boston Bowel Preparation Scale">
+					description = <"The Boston Bowel Preparation Scale (BBPS) is a novel bowel cleanliness rating scale that has undergone partial validation previously.">
+				>
+				["at0001"] = <
+					text = <"Right colon">
+					description = <"The right colon. ">
+				>
+				["at0002"] = <
+					text = <"Unprepared colon segment with mucosa not seen due to solid stool that cannot be cleared.">
+					description = <"Solid stool that cannot be cleared">
+				>
+				["at0003"] = <
+					text = <"Portion of mucosa of the colon segment seen, but other areas of the colon segment not well seen due to staining, residual stool and/or opaque liquid.">
+					description = <"Staining, residual stool and/or opaque liquid">
+				>
+				["at0004"] = <
+					text = <"Minor amount of residual staining, small fragments of stool and/or opaque liquid, but mucosa of colon segment seen well.">
+					description = <"Minor amount">
+				>
+				["at0005"] = <
+					text = <"Entire mucosa of colon segment seen well with no residual staining, small fragments of stool or opaque liquid. The wording of the scale was finalized after incorporating feedback from three colleagues experienced in colonoscopy.">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Comment">
+					description = <"Narrative description of the finding. ">
+					comment = <"Optional free text if needed">
+				>
+				["at0012"] = <
+					text = <"Total score">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Transverse">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Entire mucosa of colon segment seen well with no residual staining, small fragments of stool or opaque liquid. The wording of the scale was finalized after incorporating feedback from three colleagues experienced in colonoscopy.">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Minor amount of residual staining, small fragments of stool and/or opaque liquid, but mucosa of colon segment seen well.">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Portion of mucosa of the colon segment seen, but other areas of the colon segment not well seen due to staining, residual stool and/or opaque liquid.">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"Unprepared colon segment with mucosa not seen due to solid stool that cannot be cleared.">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"Left colon">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Entire mucosa of colon segment seen well with no residual staining, small fragments of stool or opaque liquid. The wording of the scale was finalized after incorporating feedback from three colleagues experienced in colonoscopy.">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Minor amount of residual staining, small fragments of stool and/or opaque liquid, but mucosa of colon segment seen well.">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Portion of mucosa of the colon segment seen, but other areas of the colon segment not well seen due to staining, residual stool and/or opaque liquid.">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Unprepared colon segment with mucosa not seen due to solid stool that cannot be cleared.">
+					description = <"*">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0000"] = <[SNOMED-CT::722818007]>
+			>
+		>
+	>
