@@ -1,0 +1,158 @@
+archetype (adl_version=1.4; uid=d36f4a7e-8119-3200-84c0-a164a28b7d0c)
+	openEHR-EHR-CLUSTER.medikamenter_med_betydning_for_koloskopi.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["name"] = <"">
+	>
+	lifecycle_state = <"0">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"8d069d023e55e84b9c8e8494389e2351">
+		["build_uid"] = <"b706b1b9-f8a5-35a9-a22e-5ed79198b08d">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- medikamenter med betydning for koloskopi
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..7} matches {    -- Medisinbruk
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Ingen relevante medisiner
+							at0003,    -- Acetylsalisylsyre
+							at0004,    -- Andre blodplatehemmere
+							at0005,    -- Warfarin
+							at0006,    -- DOAK
+							at0007,    -- LMWH
+							at0008,    -- Andre antikoagulantia
+							at0009,    -- Annet
+							at0010]    -- Ukjent/mangler opplysninger
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"medikamenter med betydning for koloskopi">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Medisinbruk">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Ingen relevante medisiner">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Acetylsalisylsyre">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Andre blodplatehemmere">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Warfarin">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"DOAK">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"LMWH">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Andre antikoagulantia">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Annet">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Ukjent/mangler opplysninger">
+					description = <"*">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*medikamenter med betydning for koloskopi (nb)">
+					description = <"*unknown (nb)">
+				>
+				["at0001"] = <
+					text = <"*Medisinbruk (nb)">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"*Ingen relevante medisiner (nb)">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"*Acetylsalisylsyre (nb)">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"*Andre blodplatehemmere (nb)">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"*Warfarin (nb)">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"*DOAK (nb)">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"*LMWH (nb)">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"*Andre antikoagulantia (nb)">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"*Annet (nb)">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"*Ukjent/mangler opplysninger (nb)">
+					description = <"*">
+				>
+			>
+		>
+	>
