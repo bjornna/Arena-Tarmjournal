@@ -1,0 +1,78 @@
+archetype (adl_version=1.4; uid=e1f71dde-3d27-419a-9f99-5599c06738b0)
+	openEHR-EHR-CLUSTER.prague_klassifikasjon_av_barrett_oesophagus_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2020-12-01">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"727ca02c4c8f222e100256004dd4a6a8">
+		["build_uid"] = <"564e8325-4ad3-3e32-b4e5-2b153f21ddc9">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Prague klassifikasjon av Barrett oesophagus
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- C
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"cm">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- M
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"cm">
+							>
+						>
+					>
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Prague klassifikasjon av Barrett oesophagus">
+					description = <"Prague klassifikasjon av Barrett oesophagus">
+				>
+				["at0001"] = <
+					text = <"C">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"M">
+					description = <"">
+				>
+			>
+		>
+	>
