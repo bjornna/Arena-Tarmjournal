@@ -1,0 +1,384 @@
+archetype (adl_version=1.4; uid=e083fe5d-e3da-36fc-8a34-593f2892a39f)
+	openEHR-EHR-CLUSTER.endoskopifunn_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["name"] = <"">
+	>
+	lifecycle_state = <"0">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"TIl å registrere spesifike koloskopifunn som er brukt i koloskopi screening.">
+			use = <"Skal ikke brukes av andre enn DIPS til bruk innen koloskopi løsningen.">
+			misuse = <"Er ikke tiltenkt bruk utover koloskopiundersøkelser. ">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"B55E04D7521D5D77015B8A6036CD0246">
+		["build_uid"] = <"44aa4eef-9ffb-3c37-b072-a2caf333e9e1">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Endoskopifunn
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0037] occurrences matches {0..1} matches {    -- Tarmsegment hvor lesjonen er påvist
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0038,    -- Term ileum
+							at0039,    -- Cøkum
+							at0040,    -- Ascendens
+							at0041,    -- Høyre fleksur
+							at0042,    -- Transversum
+							at0043,    -- Venstre fleksur
+							at0044,    -- Descendens
+							at0045,    -- Sigmoid
+							at0046,    -- Rectosigmoid overgang
+							at0047]    -- Rektum
+						}
+					}
+				}
+			}
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Morfologi
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0003,    -- 0-lp stilket
+							at0004,    -- 0-ls høy bredbaset
+							at0005,    -- 0-IIa lav bredbaset
+							at0006,    -- 0-IIb flat
+							at0007,    -- 0-IIc nedsunket
+							at0008]    -- 0-III nedsunket ulcerert
+						}
+					}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Størrelse i mm
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"mm">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Cancer suspekt lesjon
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Metode for fjerning eller vevsprøve av funnet
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0019,    -- Fjernes ikke
+							at0020,    -- Biopsitang
+							at0021,    -- Endoskopisk mucosal reseksjon
+							at0022,    -- Kald slynge
+							at0023,    -- Kald slynge piecmeal
+							at0024,    -- Diatermislynge
+							at0025,    -- Diatermislynge piecmeal
+							at0026,    -- ESD
+							at0049,    -- EMR Piecemeal
+							at0027,    -- Annen metode
+							at0050]    -- Kun biopsi
+						}
+					}
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Er lesjonen endoskopisk komplett fjernet?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0016,    -- Ja
+							at0017,    -- Usikker
+							at0018]    -- Nei
+						}
+					}
+				}
+			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Vevsprøve sendt til patolog
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0015] occurrences matches {0..1} matches {    -- Fritekst nærmere spesifisering
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0029] occurrences matches {0..1} matches {    -- Avstand fra anus med rett skop
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"cm">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0030] occurrences matches {0..1} matches {    -- Stenosegrad
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0031,    -- Passabel
+							at0032]    -- Ikke passabel
+						}
+					}
+				}
+			}
+			ELEMENT[at0033] occurrences matches {0..1} matches {    -- Kirurg tilsett
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0034,    -- Ja
+							at0035,    -- Nei
+							at0036]    -- Ikke aktuelt
+						}
+					}
+				}
+			}
+			allow_archetype CLUSTER[at0048] occurrences matches {0..*} matches {    -- Detaljer
+				include
+					archetype_id/value matches {/.*/}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"SNOMED-CT", ...>
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Endoskopifunn">
+					description = <"Spesifikk struktur for å registrere funn ved koloskopi. Arketypen er skreddersydd for å dekke koloskopijournal og det nasjonale tarmscreening prosjektet. ">
+				>
+				["at0001"] = <
+					text = <"Morfologi">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"0-lp stilket">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"0-ls høy bredbaset">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"0-IIa lav bredbaset">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"0-IIb flat">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"0-IIc nedsunket">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"0-III nedsunket ulcerert">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Størrelse i mm">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Cancer suspekt lesjon">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Metode for fjerning eller vevsprøve av funnet">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Er lesjonen endoskopisk komplett fjernet?">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Vevsprøve sendt til patolog">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Fritekst nærmere spesifisering">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Ja">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"Usikker">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"Nei">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"Fjernes ikke">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Biopsitang">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Endoskopisk mucosal reseksjon">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Kald slynge">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"Kald slynge piecmeal">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"Diatermislynge">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"Diatermislynge piecmeal">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"ESD">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"Annen metode">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Avstand fra anus med rett skop">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Stenosegrad">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Passabel">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Ikke passabel">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Kirurg tilsett">
+					description = <"Dersom det er cancer suspekt lesjon skal det vurderes om kirurg skal bes om tilsyn. ">
+					comment = <"Vurderes flyttet til egen struktur siden det er en generell vurdering ved en eller flere cancer suspekte lesjon. Kan skje flytte til ACTION.procedure eller FUNN ">
+				>
+				["at0034"] = <
+					text = <"Ja">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"Nei">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"Ikke aktuelt">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"Tarmsegment hvor lesjonen er påvist">
+					description = <"*">
+				>
+				["at0038"] = <
+					text = <"Term ileum">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"Cøkum">
+					description = <"*">
+				>
+				["at0040"] = <
+					text = <"Ascendens">
+					description = <"Kolon ascdendens">
+				>
+				["at0041"] = <
+					text = <"Høyre fleksur">
+					description = <"*">
+				>
+				["at0042"] = <
+					text = <"Transversum">
+					description = <"*">
+				>
+				["at0043"] = <
+					text = <"Venstre fleksur">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"Descendens">
+					description = <"Kolon descendens">
+				>
+				["at0045"] = <
+					text = <"Sigmoid">
+					description = <"*">
+				>
+				["at0046"] = <
+					text = <"Rectosigmoid overgang">
+					description = <"*">
+				>
+				["at0047"] = <
+					text = <"Rektum">
+					description = <"*">
+				>
+				["at0048"] = <
+					text = <"Detaljer">
+					description = <"*">
+					comment = <"Detaljer for ytterligere beskrivelse av lesjonen. F.eks. om prøvemateriale og -beholder">
+				>
+				["at0049"] = <
+					text = <"EMR Piecemeal">
+					description = <"*">
+				>
+				["at0050"] = <
+					text = <"Kun biopsi">
+					description = <"*">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0038"] = <[SNOMED-CT::85774003]>
+				["at0039"] = <[SNOMED-CT::32713005]>
+				["at0040"] = <[SNOMED-CT::9040008]>
+				["at0041"] = <[SNOMED-CT::48338005]>
+				["at0042"] = <[SNOMED-CT::485005]>
+				["at0043"] = <[SNOMED-CT::72592005]>
+				["at0044"] = <[SNOMED-CT::32622004]>
+				["at0045"] = <[SNOMED-CT::60184004]>
+				["at0046"] = <[SNOMED-CT::81922002]>
+				["at0047"] = <[SNOMED-CT::34402009]>
+			>
+		>
+	>
