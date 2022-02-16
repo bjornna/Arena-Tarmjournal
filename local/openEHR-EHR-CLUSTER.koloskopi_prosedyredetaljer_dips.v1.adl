@@ -10,30 +10,38 @@ language
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			author = <
-				["name"] = <"????">
+				["name"] = <"Bjørn Næss">
+				["email"] = <"bna@dips.no">
+				["organisation"] = <"DIPS AS">
 			>
 		>
 	>
 
 description
 	original_author = <
-		["name"] = <"">
+		["name"] = <"Morten Hørthe">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"mho@dips.no">
+		["date"] = <"2020-12-28">
 	>
 	lifecycle_state = <"0">
+	other_contributors = <"Bjørn Næss <bna@dips.no>", ...>
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Brukes på diakonhjemmet som en prosedyrebeskrivelse av koloskopi">
+			keywords = <"kolonskopi", ...>
 			use = <"Brukes på diakonhjemmet som en prosedyrebeskrivelse av koloskopi">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"???">
+			keywords = <"*kolonskopi (nb)", ...>
 			copyright = <"© openEHR Foundation">
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"829D9C531069C8A52208CA111116AE55">
+		["MD5-CAM-1.0.1"] = <"16272e1b7c828b864484e780a06a0c5b">
 		["build_uid"] = <"a66373b7-3833-35d1-afc9-cb7763308077">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
