@@ -1,0 +1,371 @@
+archetype (adl_version=1.4; uid=268d2542-b3ab-3dc7-b05f-0c052fbbfe4f)
+	openEHR-EHR-CLUSTER.koloskopi_prosedyredetaljer_dips.v2
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"????">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2021-05-21">
+		["name"] = <"Morten Hørthe">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"mho@dipsno">
+	>
+	lifecycle_state = <"0">
+	other_contributors = <"Bjørn Næss, DIPS AS", ...>
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Spesifikk struktur for detaljer om kolonskopi. Feltene er definert av nasjonalt tarmscreeningprosjekt.">
+			keywords = <"tarmjournal", ...>
+			use = <"Benyttes for å registrere detaljer om en gjennomført koloskopiundersøkelse. Utviklet for å støtte kravene fra nasjonal tarmjournal med tanke på innrapportering til Gastronet og Kreftregisteret (Tarmkreftscreening) ">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"???">
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"E829BA8364C69BB8D66D16F2788DEAE5">
+		["build_uid"] = <"a66373b7-3833-35d1-afc9-cb7763308077">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Koloskopi prosedyredetaljer
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Undersøkt til og med angitt segment
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0003,    -- Term. Ileum
+							at0004,    -- Cøkum
+							at0005,    -- Ascendens
+							at0006,    -- Høyre fleksur
+							at0007,    -- Transversum
+							at0008,    -- Venstre fleksur
+							at0009,    -- Descendens
+							at0010,    -- Sigmoid
+							at0011,    -- Rektosigmoid overgang
+							at0012,    -- Rektum
+							at0024,    -- Anastomose
+							at0022]    -- Annet
+						}
+					}
+				}
+			}
+			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Beskrivelse/begrunnelse av annet segment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Var det indisert å intubere cøkum?
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0016] occurrences matches {0..1} matches {    -- Fotodokumentasjon på at cøkum er nådd?
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0015] occurrences matches {0..1} matches {    -- Tilbaketrekkningstid fra cøkum til avsluttet undersøkelse?
+				value matches {
+					DV_DURATION matches {
+						value matches {PTM}
+					}
+				}
+			}
+			ELEMENT[at0017] occurrences matches {0..1} matches {    -- Rektaleksplorasjon
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0018] occurrences matches {0..1} matches {    -- Retroflektert
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0019] occurrences matches {0..1} matches {    -- Instrumentering
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0020,    -- Komplisert
+							at0021]    -- Ukomplisert
+						}
+					}
+				}
+			}
+			ELEMENT[at0025] occurrences matches {0..1} matches {    -- Alle påviste polypper fjernet (clean colon oppnådd)?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0026,    -- Ja
+							at0027,    -- Usikker
+							at0028]    -- Nei
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"SNOMED-CT", ...>
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Koloskopi prosedyredetaljer">
+					description = <"Spesifikk struktur for detaljer om kolonskopi. Feltene er definert av nasjonalt tarmscreeningprosjekt.">
+				>
+				["at0001"] = <
+					text = <"Undersøkt til og med angitt segment">
+					description = <"Til hvilke avsnitt ble pasienten undersøkt">
+				>
+				["at0003"] = <
+					text = <"Term. Ileum">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Cøkum">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Ascendens">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Høyre fleksur">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Transversum">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Venstre fleksur">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Descendens">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Sigmoid">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Rektosigmoid overgang">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Rektum">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Var det indisert å intubere cøkum?">
+					description = <"Var det under undersøkelsen indikasjon for å intubere cøkum.">
+				>
+				["at0015"] = <
+					text = <"Tilbaketrekkningstid fra cøkum til avsluttet undersøkelse?">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Fotodokumentasjon på at cøkum er nådd?">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"Rektaleksplorasjon">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"Retroflektert">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"Instrumentering">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Komplisert">
+					description = <"instrumenteringen var komplisert">
+				>
+				["at0021"] = <
+					text = <"Ukomplisert">
+					description = <"Instrumenteringen var ukomplisert">
+				>
+				["at0022"] = <
+					text = <"Annet">
+					description = <"Annet">
+				>
+				["at0023"] = <
+					text = <"Beskrivelse/begrunnelse av annet segment">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"Anastomose">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"Alle påviste polypper fjernet (clean colon oppnådd)?">
+					description = <"Indikasjon på at alle polypper er fjernet ">
+				>
+				["at0026"] = <
+					text = <"Ja">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"Usikker">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"Nei">
+					description = <"*">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Colonoscopy procedure details">
+					description = <"Specific structure for colonoscopy details. The fields are defined by a national intestinal screening project. ">
+				>
+				["at0001"] = <
+					text = <"Examined up to and including specified segment">
+					description = <"To which section was the patient examined?">
+				>
+				["at0003"] = <
+					text = <"Terminal ileum">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Caecum">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Ascending colon">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Right flexur">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Transverse colon">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Left flexur">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Colon descendens">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Sigmoid colon">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Rectosigmoid transition">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Rectum">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Was the indication to intubate caecum?">
+					description = <"During the examination, was there an indication to intubate caecum?">
+				>
+				["at0015"] = <
+					text = <"Withdrawal time from caecum to completed examination">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Documentation by photo that caecum has been reached">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"*Rektaleksplorasjon(nb)">
+					description = <"**(nb)">
+				>
+				["at0018"] = <
+					text = <"*Retroflektert(nb)">
+					description = <"**(nb)">
+				>
+				["at0019"] = <
+					text = <"*Instrumentering(nb)">
+					description = <"**(nb)">
+				>
+				["at0020"] = <
+					text = <"*Komplisert(nb)">
+					description = <"*instrumenteringen var komplisert(nb)">
+				>
+				["at0021"] = <
+					text = <"*Ukomplisert(nb)">
+					description = <"*Instrumenteringen var ukomplisert(nb)">
+				>
+				["at0022"] = <
+					text = <"*Annet(nb)">
+					description = <"*Annet(nb)">
+				>
+				["at0023"] = <
+					text = <"*Beskrivelse/begrunnelse av annet segment(nb)">
+					description = <"**(nb)">
+				>
+				["at0024"] = <
+					text = <"*Anastomose(nb)">
+					description = <"**(nb)">
+				>
+				["at0025"] = <
+					text = <"*Alle påviste polypper fjernet (clean colon oppnådd)? (nb)">
+					description = <"*Indikasjon på at alle polypper er fjernet (nb)">
+				>
+				["at0026"] = <
+					text = <"*Ja(nb)">
+					description = <"**(nb)">
+				>
+				["at0027"] = <
+					text = <"*Usikker(nb)">
+					description = <"**(nb)">
+				>
+				["at0028"] = <
+					text = <"*Nei(nb)">
+					description = <"**(nb)">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0003"] = <[SNOMED-CT::85774003]>
+				["at0004"] = <[SNOMED-CT::32713005]>
+				["at0005"] = <[SNOMED-CT::9040008]>
+				["at0006"] = <[SNOMED-CT::48338005]>
+				["at0007"] = <[SNOMED-CT::485005]>
+				["at0008"] = <[SNOMED-CT::72592005]>
+				["at0009"] = <[SNOMED-CT::32622004]>
+				["at0010"] = <[SNOMED-CT::60184004]>
+				["at0011"] = <[SNOMED-CT::49832006]>
+				["at0012"] = <[SNOMED-CT::34402009]>
+			>
+		>
+	>
