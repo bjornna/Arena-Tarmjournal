@@ -1,0 +1,129 @@
+archetype (adl_version=1.4; uid=99d542cc-fa37-40bd-8c06-c25fb7a42127)
+	openEHR-EHR-CLUSTER.bowel_preparation_dips.v2
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"????">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2021-06-29">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"NotSet">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Utviklet for å dekke spesifikke strukturer knyttet til forberedelse av tarm og knyttet opp mot medisinering. Spesielt fokus er å kunne angi hvorvidt splittdosering av tømmingsmiddel er gitt. ">
+			use = <"Benyttes sammen med medikasjonsarketype for å angi tømmingsmiddel.">
+			misuse = <"Benyttes ikke utenfor tarmforberedelser. ">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"???">
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"https://www.mayoclinic.org/tests-procedures/colonoscopy/expert-answers/colonoscopy-preparation/faq-20058246">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"F778794D7E344D1E8B826B3E8BB85160">
+		["build_uid"] = <"10928cb2-0612-3a21-8dd6-eb9f17e7ca97">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Tarmforberedelse
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] matches {    -- Tømmingsmiddel ble tatt som "splittdosering"
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Ja
+							at0003,    -- Nei
+							at0004,    -- Usikker
+							at0006]    -- Ikke relevant
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Tarmforberedelse">
+					description = <"Utviklet for å dekke spesifikke strukturer knyttet til forberedelse av tarm og knyttet opp mot medisinering. Spesielt fokus er å kunne angi hvorvidt splittdosering av tømmingsmiddel er gitt. ">
+				>
+				["at0001"] = <
+					text = <"Tømmingsmiddel ble tatt som \"splittdosering\"">
+					description = <"Obligatorisk, kun ett valg tillatt
+Kun dersom Tømmingsmiddel ikke er \"ingen\" eller \"ukjent\"">
+				>
+				["at0002"] = <
+					text = <"Ja">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Nei">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Usikker">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Ikke relevant">
+					description = <"*">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Intestinal preparation">
+					description = <"Developed to cover specific structures related to intestinal preparation and linked to medication. Special focus is to be able to indicate whether a split dosage of emptying agent is given.">
+				>
+				["at0001"] = <
+					text = <"Purgatives taken as a \"split dosage\"">
+					description = <"Mandatory, only one choice allowed.
+Only if purgative is not \"None\" or \"Unknown\".">
+				>
+				["at0002"] = <
+					text = <"Yes">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"No">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Unknown">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"*Ikke relevant(nb)">
+					description = <"**(nb)">
+				>
+			>
+		>
+	>
