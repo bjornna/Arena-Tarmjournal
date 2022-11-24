@@ -10,6 +10,7 @@ language
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			author = <
+				["name"] = <"????">
 			>
 		>
 	>
@@ -21,7 +22,7 @@ description
 		["organisation"] = <"DIPS AS">
 		["email"] = <"bna@dips.no">
 	>
-	lifecycle_state = <"unmanaged">
+	lifecycle_state = <"NotSet">
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -30,6 +31,7 @@ description
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"???">
 			copyright = <"© openEHR Foundation">
 		>
 	>
@@ -37,9 +39,9 @@ description
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
 		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"106d2c741e1456c3222242bca86ff096">
+		["original_publisher"] = <"openEHR Foundation">
+		["MD5-CAM-1.0.1"] = <"A82DC5565B072FC3C0FB3D31BC64E338">
 		["build_uid"] = <"c323e570-3d67-3583-83dc-6483ae3322af">
 	>
 
@@ -57,6 +59,11 @@ definition
 				}
 			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Prosedyretype
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..*} matches {    -- Kroppsted
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -96,6 +103,10 @@ Benyttes ofte for å definere en prosedyre som inngår i en større og/eller oms
 					text = <"Detaljer om prosedyren">
 					description = <"Åpning for utvidelse av spesfiikke detaljer om prosedyren. ">
 				>
+				["at0005"] = <
+					text = <"Kroppsted">
+					description = <"Kroppsted hvor prosedyren er gjennomført">
+				>
 			>
 		>
 		["en"] = <
@@ -123,6 +134,10 @@ Often used to define a procedure that is part of a larger and/or enclosing proce
 				["at0004"] = <
 					text = <"Procedure details">
 					description = <"Opening slot for details about the procedure.">
+				>
+				["at0005"] = <
+					text = <"*Kroppsted(nb)">
+					description = <"*Kroppsted hvor prosedyren er gjennomført(nb)">
 				>
 			>
 		>
