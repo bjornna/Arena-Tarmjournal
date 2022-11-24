@@ -34,7 +34,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"B4C725F60E8ADE88D0BCF53E49F7BCF7">
+		["MD5-CAM-1.0.1"] = <"3001c830600c5b3f9f2eb1d9941ff52e">
 		["build_uid"] = <"44aa4eef-9ffb-3c37-b072-a2caf333e9e1">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -130,6 +130,11 @@ definition
 			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Vevsprøve sendt til patolog
 				value matches {
 					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0053] occurrences matches {0..1} matches {    -- Glassnummer
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0015] occurrences matches {0..1} matches {    -- Fritekst nærmere spesifisering
@@ -389,6 +394,10 @@ ontology
 					text = <"Ikke relevant">
 					description = <"*">
 				>
+				["at0053"] = <
+					text = <"Glassnummer">
+					description = <"Glassnummer på beholderen som lesjonen ble lagt i. Dette nummeret er viktig for kobling mellom funn, vevsprøve og koblingen til svar i patologisystemet. ">
+				>
 			>
 		>
 		["en"] = <
@@ -596,6 +605,10 @@ ontology
 				["at0052"] = <
 					text = <"*Ikke relevant(nb)">
 					description = <"**(nb)">
+				>
+				["at0053"] = <
+					text = <"*Glassnummer (nb)">
+					description = <"*Glassnummer på beholderen som lesjonen ble lagt i. Dette nummeret er viktig for kobling mellom funn, vevsprøve og koblingen til svar i patologisystemet.  (nb)">
 				>
 			>
 		>
