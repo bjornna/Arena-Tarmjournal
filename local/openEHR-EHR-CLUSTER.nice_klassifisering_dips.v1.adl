@@ -1,0 +1,184 @@
+archetype (adl_version=1.4; uid=0d8786fe-0194-32bc-a508-667063cda2f4)
+	openEHR-EHR-CLUSTER.nice_klassifisering_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["name"] = <"">
+	>
+	lifecycle_state = <"0">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"NICE (NBI International Colorectal Endoscopic) klassifiseringen er basert på smalbåndsbilder av tykktarmspolypper. Klassifiseringen bruker farging, vaskulære mønstre og overflate mønstre for å skille mellom hyperplastiske og adenomatøse tykktarmspolypper. Selv om den er knyttet til Olympus-selskapets endoskoper, har lignende differensialdiagnostiske tilnærminger også blitt rapportert for enheter produsert av andre selskaper. Klinisk brukes klassifiseringen for små polypper (< 5 mm eller < 10 mm).">
+			use = <"Brukes som en del av et undersøkelsesfunn eller detaljer om funn relatert til en spesifikk tykktarmspolypp.">
+			misuse = <"Brukes ikke til andre formål enn beskrevet over">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"72AB5E24833668AD5A6C060C43B12C87">
+		["build_uid"] = <"7aef67f0-3127-338a-853f-0b4a3c159522">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Nice klassifisering
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Farge
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0010,    -- Samme eller lysere enn bakgrunnen
+							at0011,    -- Brun i forhold til bakgrunnen (verifiser at fargen kommer fra blodkar)
+							at0012]    -- Brun til mørk brun i forhold til bakgrunnen; noen ganger flekkvis hvitere områder
+						}
+					}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Blodkar
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0013,    -- Ingen, eller isolerte, blonde blodkar kan være til stede og krysse lesjonen
+							at0014,    -- Brune blodkar som omgir hvite strukturer*
+							at0015]    -- Har områder med forstyrrede eller manglende blodkar
+						}
+					}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Overflatestruktur
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0016,    -- Mørke eller hvite flekker med ensartet størrelse, eller homogen mangel på mønster
+							at0017,    -- Ovale, tubulære eller forgrenede hvite strukturer* omgitt av brune blodkar
+							at0018]    -- Amorft eller manglende overflatestruktur
+						}
+					}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Mest sannynelig patologi
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0019,    -- Hyperplastisk
+							at0020,    -- Adenom
+							at0021]    -- Dyp submukosal invasiv kreft
+						}
+					}
+				}
+			}
+			ELEMENT[at0001] matches {    -- NICE klassifisering
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Type 1
+							at0003,    -- Type 2
+							at0004]    -- Type 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Nice klassifisering">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"NICE klassifisering">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Type 1">
+					description = <"Hyperplastiske polypper: Dette er godartede polypper som vanligvis utgjør liten risiko for kreftutvikling.">
+				>
+				["at0003"] = <
+					text = <"Type 2">
+					description = <"Lavrisiko adenomatøse polypper: Disse polyppene har lavere risiko for å utvikle kreft og kan være mindre enn 5 mm eller 10 mm i størrelse, avhengig av de spesifikke kriteriene som brukes.">
+				>
+				["at0004"] = <
+					text = <"Type 3">
+					description = <"Høyrisiko adenomatøse polypper: Dette er polypper med høyere risiko for kreftutvikling. De kan være større i størrelse, ha ujevne overflater, uregelmessige vaskulære mønstre eller andre karakteristika som tyder på økt risiko.">
+				>
+				["at0006"] = <
+					text = <"Farge">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Blodkar">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Overflatestruktur">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Mest sannynelig patologi">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Samme eller lysere enn bakgrunnen">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Brun i forhold til bakgrunnen (verifiser at fargen kommer fra blodkar)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Brun til mørk brun i forhold til bakgrunnen; noen ganger flekkvis hvitere områder">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Ingen, eller isolerte, blonde blodkar kan være til stede og krysse lesjonen">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Brune blodkar som omgir hvite strukturer*">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Har områder med forstyrrede eller manglende blodkar">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Mørke eller hvite flekker med ensartet størrelse, eller homogen mangel på mønster">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Ovale, tubulære eller forgrenede hvite strukturer* omgitt av brune blodkar">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Amorft eller manglende overflatestruktur">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Hyperplastisk">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Adenom">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Dyp submukosal invasiv kreft">
+					description = <"">
+				>
+			>
+		>
+	>
