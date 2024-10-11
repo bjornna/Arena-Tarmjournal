@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "fc244e697954510fc193f50726bece59",
+      "MD5-CAM-1.0.1" : "64b376afecc430a7507a3687d3cf7261",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -8071,7 +8071,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "B55E04D7521D5D77015B8A6036CD0246"
+        "PARENT:MD5-CAM-1.0.1" : "8254c8ba2f6c78e48a0cda9de4a02bc8"
       },
       "details" : {
         "nb" : {
@@ -8119,12 +8119,13 @@
                 "rmAttributeName" : "defining_code",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "at0019", "at0020", "at0021", "at0022", "at0024", "at0025", "at0026", "at0049", "at0027", "at0050" ]
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -8140,6 +8141,15 @@
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-nice_klassifisering_dips-022.v1",
           "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0048.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-jnet_classification_colorectal_neoplasia_dips-001.v1",
+          "referenceType" : "archetypeOverlay"
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -8148,11 +8158,29 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : { }
+        "nb" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0019", "at0020", "at0021", "at0022", "at0024", "at0025", "at0026", "at0049", "at0027", "at0050", "at0051" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0019", "at0020", "at0021", "at0022", "at0024", "at0025", "at0026", "at0049", "at0027", "at0050", "at0051", "at0052" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "44aa4eef-9ffb-3c37-b072-a2caf333e9e1",
@@ -15829,6 +15857,57 @@
       "accreditation" : "What goes here?",
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "2887958d-baeb-4b0c-8778-687fac4a2e4e",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "9b6d7490274102a75f599ae1e1ec3ad5"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.jnet_classification_colorectal_neoplasia_dips.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-jnet_classification_colorectal_neoplasia_dips-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3da0af4d-4a02-32f1-afcc-2c229c088aad",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
