@@ -21,7 +21,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"b1d8ce0ee0701144f71f11d8e6349207">
+		["MD5-CAM-1.0.1"] = <"8254c8ba2f6c78e48a0cda9de4a02bc8">
 		["build_uid"] = <"44aa4eef-9ffb-3c37-b072-a2caf333e9e1">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -94,10 +94,10 @@ definition
 							at0025,    -- Diatermislynge piecmeal
 							at0026,    -- ESD
 							at0049,    -- EMR Piecemeal
-							at0027,    -- Annen metode
 							at0050,    -- Kun biopsi
 							at0051,    -- u-EMR
-							at0052]    -- Fullveggsreseksjon
+							at0052,    -- Fullveggsreseksjon
+							at0027]    -- Annen metode
 						}
 					}
 				}
