@@ -1,0 +1,85 @@
+archetype (adl_version=1.4; uid=4f880134-dd0c-493d-be0c-71731631eda0)
+	openEHR-EHR-CLUSTER.jnet_classification_colorectal_neoplasia_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2024-10-12">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["references"] = <"https://karger.com/ocl/article/93/Suppl.%201/49/239170/Magnifying-Narrow-Band-Imaging-NBI-for-the
+https://www.researchgate.net/figure/The-Japan-NBI-Expert-Team-classification-narrow-band-imaging-NBI-magnifying_fig2_314139455 
+">
+		["MD5-CAM-1.0.1"] = <"9b6d7490274102a75f599ae1e1ec3ad5">
+		["build_uid"] = <"3da0af4d-4a02-32f1-afcc-2c229c088aad">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- JNET-klassifisering for kolorektal neoplasi
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- JNET klassifisering
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Type 1
+							at0003,    -- Type 2a
+							at0004,    -- Type 2b
+							at0005]    -- Type 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"JNET-klassifisering for kolorektal neoplasi">
+					description = <"JNET_classification_colorectal_neoplasia_dips">
+				>
+				["at0001"] = <
+					text = <"JNET klassifisering">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Type 1">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Type 2a">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Type 2b">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Type 3">
+					description = <"">
+				>
+			>
+		>
+	>
