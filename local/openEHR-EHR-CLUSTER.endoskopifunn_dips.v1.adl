@@ -21,7 +21,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"D38FD029A949B3C75CCD33A8F364F6D7">
+		["MD5-CAM-1.0.1"] = <"b1d8ce0ee0701144f71f11d8e6349207">
 		["build_uid"] = <"44aa4eef-9ffb-3c37-b072-a2caf333e9e1">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -96,7 +96,8 @@ definition
 							at0049,    -- EMR Piecemeal
 							at0027,    -- Annen metode
 							at0050,    -- Kun biopsi
-							at0051]    -- u-EMR - undervanns EMR
+							at0051,    -- u-EMR
+							at0052]    -- Fullveggsreseksjon
 						}
 					}
 				}
@@ -365,8 +366,12 @@ ontology
 					description = <"*">
 				>
 				["at0051"] = <
-					text = <"u-EMR - undervanns EMR">
-					description = <"*">
+					text = <"u-EMR">
+					description = <"Undervanns EMR">
+				>
+				["at0052"] = <
+					text = <"Fullveggsreseksjon">
+					description = <"">
 				>
 			>
 		>
