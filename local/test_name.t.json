@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "6664b391e297c0a983ae380492ceb1df",
+      "MD5-CAM-1.0.1" : "febad38da5fcabfd6aa3da467ce3d889",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -225,7 +225,14 @@
         "es-ar" : { },
         "pt-br" : { },
         "zh-cn" : { },
-        "nb" : { },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kort",
+            "description" : "Fritekstsammendrag eller oversikt om en pasient fra helsepersonellets perspektiv, med eller uten tilhørende fortolkninger."
+          }
+        },
         "sv" : { }
       },
       "termBindings" : { },
