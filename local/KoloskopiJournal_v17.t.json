@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "1348f1a1cb165f434a5f8f4df052f800",
+      "MD5-CAM-1.0.1" : "236a2092aa29708070ad52403e8d15ed",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -11669,7 +11669,7 @@
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..*",
+                      "occurrences" : "0..1",
                       "nodeId" : "at0005.5",
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
@@ -13821,7 +13821,14 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Undersøkelsesfunn",
+            "description" : "Andre funn ved undersøkelsen som ikke er dekket av de øvrige. Angis med fritekstbeskrivelse "
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
