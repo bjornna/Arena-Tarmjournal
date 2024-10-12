@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "8184d4ebe827680504fec4718845cac2",
+      "MD5-CAM-1.0.1" : "63568a53112451011450df65c9a331fe",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -25410,7 +25410,14 @@
             "description" : "Findings observed during the physical examination of a body system or anatomical structure."
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Undersøkelsesfunn",
+            "description" : "Undersøkelsesfunn relatert til Morbus crohn"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
