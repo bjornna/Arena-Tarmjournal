@@ -10,38 +10,30 @@ language
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			author = <
-				["name"] = <"Bjørn Næss">
-				["email"] = <"bna@dips.no">
-				["organisation"] = <"DIPS AS">
+				["name"] = <"????">
 			>
 		>
 	>
 
 description
 	original_author = <
-		["name"] = <"Morten Hørthe">
-		["organisation"] = <"DIPS AS">
-		["email"] = <"mho@dips.no">
-		["date"] = <"2020-12-28">
+		["name"] = <"">
 	>
 	lifecycle_state = <"0">
-	other_contributors = <"Bjørn Næss <bna@dips.no>", ...>
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Brukes på diakonhjemmet som en prosedyrebeskrivelse av koloskopi">
-			keywords = <"kolonskopi", ...>
 			use = <"Brukes på diakonhjemmet som en prosedyrebeskrivelse av koloskopi">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"???">
-			keywords = <"*kolonskopi (nb)", ...>
 			copyright = <"© openEHR Foundation">
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"16272e1b7c828b864484e780a06a0c5b">
+		["MD5-CAM-1.0.1"] = <"DA8719D5CBA90D4B3D57406A83FD01E7">
 		["build_uid"] = <"a66373b7-3833-35d1-afc9-cb7763308077">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -66,7 +58,8 @@ definition
 							at0012,    -- Rektum
 							at0013,    -- Analkanal/anus
 							at0024,    -- Anastomose
-							at0022]    -- Annet
+							at0022,    -- Annet
+							at0025]    -- Terminale ileum
 						}
 					}
 				}
@@ -108,8 +101,8 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0020,    -- Komplisert
-							at0021]    -- Ukomplisert
+							at0021,    -- Ukomplisert
+							at0020]    -- Komplisert
 						}
 					}
 				}
@@ -218,6 +211,10 @@ ontology
 					text = <"Anastomose">
 					description = <"Anastomose">
 				>
+				["at0025"] = <
+					text = <"Terminale ileum">
+					description = <"*">
+				>
 			>
 		>
 		["en"] = <
@@ -317,6 +314,10 @@ ontology
 				["at0024"] = <
 					text = <"*Anastomose(nb)">
 					description = <"*Anastomose(nb)">
+				>
+				["at0025"] = <
+					text = <"*Terminale ileum(nb)">
+					description = <"**(nb)">
 				>
 			>
 		>
