@@ -33,7 +33,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"DA8719D5CBA90D4B3D57406A83FD01E7">
+		["MD5-CAM-1.0.1"] = <"2146335eadbefb1ff870553c5821cfa9">
 		["build_uid"] = <"a66373b7-3833-35d1-afc9-cb7763308077">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -58,8 +58,8 @@ definition
 							at0012,    -- Rektum
 							at0013,    -- Analkanal/anus
 							at0024,    -- Anastomose
-							at0022,    -- Annet
-							at0025]    -- Terminale ileum
+							at0025,    -- Terminale ileum
+							at0022]    -- Annet
 						}
 					}
 				}
