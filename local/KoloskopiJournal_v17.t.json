@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b66ddcbde4c6473a6a619aded8c14899",
+      "MD5-CAM-1.0.1" : "368a425494dfc801573dbc631101742c",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -25448,7 +25448,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Undersøkelsesfunn og slkt",
+            "text" : "Undersøkelsesfunn",
             "description" : "Undersøkelsesfunn relatert til Morbus crohn"
           }
         }
