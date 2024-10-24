@@ -95,7 +95,7 @@ Standards for the clinical structure and content of patient records (Complete do
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"772F1EE2DFC32F55A999B2D1307E945D">
+		["MD5-CAM-1.0.1"] = <"fc5dd49b9944b3c045618aa7d4987966">
 		["build_uid"] = <"20eebabb-d9ad-40b4-9409-7eccee4e12c5">
 		["revision"] = <"1.0.1">
 	>
@@ -113,16 +113,19 @@ definition
 			ELEMENT[at0144] occurrences matches {0..1} matches {    -- Dose amount
 				value matches {
 					C_DV_QUANTITY <
-						property = <[openehr::380]>
+						
 						list = <
 							["1"] = <
 								units = <"1">
 								magnitude = <|>=0.0|>
 							>
+							["2"] = <
+								units = <"mg">
+							>
 						>
 					>
 					DV_INTERVAL<DV_QUANTITY> matches {
-						upper matches {
+						lower matches {
 							C_DV_QUANTITY <
 								property = <[openehr::380]>
 								list = <
@@ -133,7 +136,7 @@ definition
 								>
 							>
 						}
-						lower matches {
+						upper matches {
 							C_DV_QUANTITY <
 								property = <[openehr::380]>
 								list = <
@@ -336,7 +339,9 @@ Where multiple dosages are expressed, the 'Pattern sequence' makes the order in 
 				["at0144"] = <
 					text = <"Dosemengde">
 					description = <"Verdien av legemiddelmengden (dosen) administrert på ett tidspunkt, som et reelt tall eller som et intervall av reelle tall. Dette elementet er tilknyttet elementet Doseenhet.">
-					comment = <"For eksempel 1, 1.5, 0.125 eller 1-2, 12.5-20.5. Dette elementet inneholder kun talldelen av dosen, mens \"Doseenhet\" inneholder enheten.">
+					comment = <"For eksempel 1, 1.5, 0.125 eller 1-2, 12.5-20.5. Dette elementet inneholder kun talldelen av dosen, mens \"Doseenhet\" inneholder enheten.
+
+BNA (25.10.2024): Jeg måtte endre på dette feltet for å være kompatibel med tidligere versjoner av Koloskopijournal som hadde satt denne til mg">
 				>
 				["at0145"] = <
 					text = <"Doseenhet">
