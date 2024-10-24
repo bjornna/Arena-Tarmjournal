@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "09313c1f5dd86b8ee93285250b206490",
+      "MD5-CAM-1.0.1" : "1d3a4b39c165f6126dcaede5530f554d",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -8512,10 +8512,9 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lower" : 0.0,
-                      "lowerIncluded" : true,
+                      "lowerIncluded" : false,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
+                      "lowerUnbounded" : true,
                       "upperUnbounded" : true
                     } ]
                   } ]
