@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "0b6c5fdd66e2541d0d82784a5f3b0981",
+      "MD5-CAM-1.0.1" : "71d8d8876d1b2eb9e666f84482754ea6",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -420,6 +420,16 @@
           "misuse" : "Brukes ikke i forbindelse med å registrere hvem som har gjennomført en helsetjeneste. Da brukes other_participations fra referansemodellen.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        }
+      }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "nb" : {
+          "" : {
+            "ShowAsTable" : "true"
+          }
         }
       }
     },
@@ -2502,7 +2512,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "829D9C531069C8A52208CA111116AE55"
+        "PARENT:MD5-CAM-1.0.1" : "2146335eadbefb1ff870553c5821cfa9"
       },
       "details" : {
         "nb" : {
@@ -3844,7 +3854,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "772F1EE2DFC32F55A999B2D1307E945D"
+        "PARENT:MD5-CAM-1.0.1" : "fc5dd49b9944b3c045618aa7d4987966"
       },
       "details" : {
         "nb" : {
@@ -3927,8 +3937,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -3976,8 +3986,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4080,8 +4090,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4095,8 +4105,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4110,8 +4120,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4125,8 +4135,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4165,8 +4175,8 @@
                     "lower" : "PT0H",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -4215,8 +4225,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4263,8 +4273,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4309,8 +4319,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4495,8 +4505,8 @@
                     "lower" : "P0D",
                     "lowerIncluded" : false,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -4550,8 +4560,8 @@
                       "upper" : 7.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4563,8 +4573,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -4576,8 +4586,8 @@
                       "upper" : 31.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4589,8 +4599,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -4602,8 +4612,8 @@
                       "upper" : 366.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4615,8 +4625,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   } ]
                 } ]
@@ -4665,8 +4675,8 @@
                           "upper" : 7.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4678,8 +4688,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4691,8 +4701,8 @@
                           "upper" : 31.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4704,8 +4714,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4717,8 +4727,8 @@
                           "upper" : 366.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4730,8 +4740,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -4778,8 +4788,8 @@
                           "upper" : 7.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4791,8 +4801,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4804,8 +4814,8 @@
                           "upper" : 31.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4817,8 +4827,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4830,8 +4840,8 @@
                           "upper" : 366.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4843,8 +4853,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -4906,8 +4916,8 @@
                     "upper" : 31,
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : false
+                    "upperUnbounded" : false,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -4933,8 +4943,8 @@
                         "upper" : 31,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -4958,8 +4968,8 @@
                         "upper" : 31,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -6198,8 +6208,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -8138,7 +8148,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "772F1EE2DFC32F55A999B2D1307E945D"
+        "PARENT:MD5-CAM-1.0.1" : "fc5dd49b9944b3c045618aa7d4987966"
       },
       "details" : {
         "nb" : {
@@ -8221,8 +8231,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -8270,8 +8280,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -8387,8 +8397,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -8402,8 +8412,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -8417,8 +8427,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -8432,8 +8442,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -8472,8 +8482,8 @@
                     "lower" : "PT0H",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -8522,8 +8532,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -8570,8 +8580,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -8616,8 +8626,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -10444,7 +10454,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "772F1EE2DFC32F55A999B2D1307E945D"
+        "PARENT:MD5-CAM-1.0.1" : "fc5dd49b9944b3c045618aa7d4987966"
       },
       "details" : {
         "nb" : {
@@ -10527,8 +10537,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -10576,8 +10586,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -10693,8 +10703,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -10708,8 +10718,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -10723,8 +10733,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -10738,8 +10748,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -10778,8 +10788,8 @@
                     "lower" : "PT0H",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -10828,8 +10838,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -10876,8 +10886,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -10922,8 +10932,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -11558,7 +11568,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "B55E04D7521D5D77015B8A6036CD0246"
+        "PARENT:MD5-CAM-1.0.1" : "8254c8ba2f6c78e48a0cda9de4a02bc8"
       },
       "details" : {
         "nb" : {
@@ -12584,8 +12594,8 @@
                       "upper" : 1,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_TERMINOLOGY_CODE",
@@ -12600,8 +12610,8 @@
                       "upper" : 2,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_TERMINOLOGY_CODE",
@@ -12616,8 +12626,8 @@
                       "upper" : 3,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_TERMINOLOGY_CODE",
@@ -14356,8 +14366,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -15463,8 +15473,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -16528,8 +16538,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -18488,7 +18498,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "772F1EE2DFC32F55A999B2D1307E945D"
+        "PARENT:MD5-CAM-1.0.1" : "fc5dd49b9944b3c045618aa7d4987966"
       },
       "details" : {
         "nb" : {
@@ -18571,8 +18581,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -18620,8 +18630,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -18724,8 +18734,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -18739,8 +18749,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -18754,8 +18764,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -18769,8 +18779,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -18809,8 +18819,8 @@
                     "lower" : "PT0H",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -18859,8 +18869,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -18907,8 +18917,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -18953,8 +18963,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -19838,8 +19848,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -20835,8 +20845,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -21832,8 +21842,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -23645,8 +23655,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
