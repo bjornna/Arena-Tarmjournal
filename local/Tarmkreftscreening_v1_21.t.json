@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "933f0f6420668a705ce5520edb762345",
+      "MD5-CAM-1.0.1" : "cb2e6958e4eea7e28b8b4f57c9684a67",
       "PARENT:MD5-CAM-1.0.1" : "2735709779613B83B2C9552E76337013",
       "original_language" : "ISO_639-1::nb"
     },
@@ -26571,17 +26571,19 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "0..1",
+                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
-                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
                       "terminologyId" : {
                         "value" : "SCREENIT-INDICATION"
                       },
                       "constraint" : [ ],
+                      "selectedTerminologies" : [ "SCREENIT-INDICATION" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I01",
