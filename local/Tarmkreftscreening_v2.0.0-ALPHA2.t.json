@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "c852962ce5caee8bc6c99bf96d70fb52",
+      "MD5-CAM-1.0.1" : "a5ddfa8f603999fb621276f663ccc494",
       "PARENT:MD5-CAM-1.0.1" : "2735709779613B83B2C9552E76337013",
       "original_language" : "ISO_639-1::nb"
     },
@@ -4993,32 +4993,40 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "0..1",
+                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
-                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
                       "terminologyId" : {
                         "value" : "SCREENIT-PURGATIVE"
                       },
                       "constraint" : [ ],
+                      "selectedTerminologies" : [ "SCREENIT-PURGATIVE" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SCREENIT-PURGATIVE",
                         "code" : "01",
                         "value" : "Picoprep/Citrafleet",
-                        "translations" : { }
+                        "translations" : {
+                          "nb" : "Picoprep/Citrafleet"
+                        }
                       }, {
                         "terminologyId" : "SCREENIT-PURGATIVE",
                         "code" : "02",
                         "value" : "Laxabon",
-                        "translations" : { }
+                        "translations" : {
+                          "nb" : "Laxabon"
+                        }
                       }, {
                         "terminologyId" : "SCREENIT-PURGATIVE",
                         "code" : "04",
                         "value" : "Plenvu",
-                        "translations" : { }
+                        "translations" : {
+                          "nb" : "Plenvu"
+                        }
                       } ]
                     } ]
                   } ],
@@ -48618,7 +48626,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "644abecff6b20cc0a596a09d0ce5115c"
+        "PARENT:MD5-CAM-1.0.1" : "ba1c84bcc345b49acc57e6045eeaf1b8"
       },
       "details" : { }
     },
