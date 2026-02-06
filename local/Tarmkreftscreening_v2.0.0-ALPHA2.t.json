@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "a5ddfa8f603999fb621276f663ccc494",
+      "MD5-CAM-1.0.1" : "e7b67a821ecf25ad5185c56a7c3e4e14",
       "PARENT:MD5-CAM-1.0.1" : "2735709779613B83B2C9552E76337013",
       "original_language" : "ISO_639-1::nb"
     },
@@ -24056,6 +24056,13 @@
                         "value" : "Positiv iFOBT i screeningprogrammet",
                         "translations" : {
                           "nb" : "Positiv iFOBT i screeningprogrammet"
+                        }
+                      }, {
+                        "terminologyId" : "SCREENIT-INDICATION",
+                        "code" : "I14",
+                        "value" : "Positiv FOBT utenom tarmscreeningprogram",
+                        "translations" : {
+                          "nb" : "Positiv FOBT utenom tarmscreeningprogram"
                         }
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
@@ -48628,7 +48635,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "ba1c84bcc345b49acc57e6045eeaf1b8"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.procedure_indiation_dips.v1",
     "differential" : true,
