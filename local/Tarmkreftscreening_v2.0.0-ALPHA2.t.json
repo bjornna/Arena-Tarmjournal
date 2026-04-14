@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "e7b67a821ecf25ad5185c56a7c3e4e14",
+      "MD5-CAM-1.0.1" : "fcea397f65f50617cea6ccf1864d8b85",
       "PARENT:MD5-CAM-1.0.1" : "2735709779613B83B2C9552E76337013",
       "original_language" : "ISO_639-1::nb"
     },
@@ -1355,8 +1355,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "49601007",
-                        "value" : "Kardio- eller cerebrovaskulær sykdom",
-                        "translations" : { }
+                        "value" : "Kardio- eller cerebrovaskulær sykdom"
                       } ]
                     } ]
                   } ],
@@ -1597,8 +1596,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "413839001",
-                        "value" : "Kronisk lungesykdom",
-                        "translations" : { }
+                        "value" : "Kronisk lungesykdom"
                       } ]
                     } ]
                   } ],
@@ -1839,8 +1837,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "709044004",
-                        "value" : "Kronisk nyresykdom",
-                        "translations" : { }
+                        "value" : "Kronisk nyresykdom"
                       } ]
                     } ]
                   } ],
@@ -2081,8 +2078,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "73211009",
-                        "value" : "Diabetes",
-                        "translations" : { }
+                        "value" : "Diabetes"
                       } ]
                     } ]
                   } ],
@@ -2533,8 +2529,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "373068000",
-                        "value" : "Ingen kjente",
-                        "translations" : { }
+                        "value" : "Ingen kjente"
                       } ]
                     } ]
                   } ],
@@ -2587,8 +2582,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "64572001",
-                        "value" : "Sykdommer generelt",
-                        "translations" : { }
+                        "value" : "Sykdommer generelt"
                       } ]
                     } ]
                   } ],
@@ -2781,8 +2775,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "129019007",
-                        "value" : "Tar medisiner",
-                        "translations" : { }
+                        "value" : "Tar medisiner"
                       } ]
                     } ]
                   } ],
@@ -2847,38 +2840,31 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SCREENIT-MEDICATION",
                         "code" : "M01",
-                        "value" : "Acetylsalisylsyre",
-                        "translations" : { }
+                        "value" : "Acetylsalisylsyre"
                       }, {
                         "terminologyId" : "SCREENIT-MEDICATION",
                         "code" : "M02",
-                        "value" : "Andre blodplatehemmere",
-                        "translations" : { }
+                        "value" : "Andre blodplatehemmere"
                       }, {
                         "terminologyId" : "SCREENIT-MEDICATION",
                         "code" : "M03",
-                        "value" : "Warfarin",
-                        "translations" : { }
+                        "value" : "Warfarin"
                       }, {
                         "terminologyId" : "SCREENIT-MEDICATION",
                         "code" : "M04",
-                        "value" : "DOAK",
-                        "translations" : { }
+                        "value" : "DOAK"
                       }, {
                         "terminologyId" : "SCREENIT-MEDICATION",
                         "code" : "M05",
-                        "value" : "LMWH",
-                        "translations" : { }
+                        "value" : "LMWH"
                       }, {
                         "terminologyId" : "SCREENIT-MEDICATION",
                         "code" : "M06",
-                        "value" : "Andre antikoagulantia",
-                        "translations" : { }
+                        "value" : "Andre antikoagulantia"
                       }, {
                         "terminologyId" : "SCREENIT-MEDICATION",
                         "code" : "M99",
-                        "value" : "Annet",
-                        "translations" : { }
+                        "value" : "Annet"
                       } ]
                     } ]
                   } ],
@@ -3272,8 +3258,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "129019007",
-                        "value" : "Tar medisiner generelt",
-                        "translations" : { }
+                        "value" : "Tar medisiner generelt"
                       } ]
                     } ]
                   } ],
@@ -5009,24 +4994,15 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SCREENIT-PURGATIVE",
                         "code" : "01",
-                        "value" : "Picoprep/Citrafleet",
-                        "translations" : {
-                          "nb" : "Picoprep/Citrafleet"
-                        }
+                        "value" : "Picoprep/Citrafleet"
                       }, {
                         "terminologyId" : "SCREENIT-PURGATIVE",
                         "code" : "02",
-                        "value" : "Laxabon",
-                        "translations" : {
-                          "nb" : "Laxabon"
-                        }
+                        "value" : "Laxabon"
                       }, {
                         "terminologyId" : "SCREENIT-PURGATIVE",
                         "code" : "04",
-                        "value" : "Plenvu",
-                        "translations" : {
-                          "nb" : "Plenvu"
-                        }
+                        "value" : "Plenvu"
                       } ]
                     } ]
                   } ],
@@ -5115,8 +5091,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "774039000",
-                        "value" : "Tarmtømmingsmiddel",
-                        "translations" : { }
+                        "value" : "Tarmtømmingsmiddel"
                       } ]
                     } ]
                   } ],
@@ -6961,8 +6936,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "774039000",
-                        "value" : "Tarmtømmingsmiddel",
-                        "translations" : { }
+                        "value" : "Tarmtømmingsmiddel"
                       } ]
                     } ]
                   } ],
@@ -7441,13 +7415,11 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "262001002",
-                        "value" : "Ingen",
-                        "translations" : { }
+                        "value" : "Ingen"
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "261665006",
-                        "value" : "Ukjent",
-                        "translations" : { }
+                        "value" : "Ukjent"
                       } ]
                     } ]
                   } ],
@@ -7500,8 +7472,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "24570008",
-                        "value" : "Tømmingsmiddel",
-                        "translations" : { }
+                        "value" : "Tømmingsmiddel"
                       } ]
                     } ]
                   } ],
@@ -8604,8 +8575,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "72641008",
-                        "value" : "Administrering av sedasjon",
-                        "translations" : { }
+                        "value" : "Administrering av sedasjon"
                       } ]
                     } ]
                   } ],
@@ -8651,18 +8621,15 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "262001002",
-                        "value" : "Nei",
-                        "translations" : { }
+                        "value" : "Nei"
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "427255001",
-                        "value" : "Ja, spesifiseres i liste",
-                        "translations" : { }
+                        "value" : "Ja, spesifiseres i liste"
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "426155000",
-                        "value" : "Narkose eller dyp sedasjon med anestesistøtte",
-                        "translations" : { }
+                        "value" : "Narkose eller dyp sedasjon med anestesistøtte"
                       } ]
                     } ]
                   } ],
@@ -10677,8 +10644,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "373476007",
-                        "value" : "Midazolam",
-                        "translations" : { }
+                        "value" : "Midazolam"
                       } ]
                     } ]
                   } ],
@@ -10766,8 +10732,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "72641008",
-                        "value" : "Administrering av sedasjon",
-                        "translations" : { }
+                        "value" : "Administrering av sedasjon"
                       } ]
                     } ]
                   } ],
@@ -12971,8 +12936,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "387560008",
-                        "value" : "Alfentanil",
-                        "translations" : { }
+                        "value" : "Alfentanil"
                       } ]
                     } ]
                   } ],
@@ -13060,8 +13024,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "72641008",
-                        "value" : "Administrering av sedasjon",
-                        "translations" : { }
+                        "value" : "Administrering av sedasjon"
                       } ]
                     } ]
                   } ],
@@ -15265,8 +15228,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "373492002",
-                        "value" : "Fentanyl",
-                        "translations" : { }
+                        "value" : "Fentanyl"
                       } ]
                     } ]
                   } ],
@@ -15354,8 +15316,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "72641008",
-                        "value" : "Administrering av sedasjon",
-                        "translations" : { }
+                        "value" : "Administrering av sedasjon"
                       } ]
                     } ]
                   } ],
@@ -17568,8 +17529,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "395739004",
-                        "value" : "Buscopan",
-                        "translations" : { }
+                        "value" : "Buscopan"
                       } ]
                     } ]
                   } ],
@@ -17657,8 +17617,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "72641008",
-                        "value" : "Administrering av sedasjon",
-                        "translations" : { }
+                        "value" : "Administrering av sedasjon"
                       } ]
                     } ]
                   } ],
@@ -19862,8 +19821,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "387423006",
-                        "value" : "Propofol",
-                        "translations" : { }
+                        "value" : "Propofol"
                       } ]
                     } ]
                   } ],
@@ -19951,8 +19909,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "72641008",
-                        "value" : "Administrering av sedasjon",
-                        "translations" : { }
+                        "value" : "Administrering av sedasjon"
                       } ]
                     } ]
                   } ],
@@ -22212,8 +22169,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "72641008",
-                        "value" : "Administrering av sedasjon",
-                        "translations" : { }
+                        "value" : "Administrering av sedasjon"
                       } ]
                     } ]
                   } ],
@@ -23973,18 +23929,15 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "303587008",
-                        "value" : "Terapeutisk",
-                        "translations" : { }
+                        "value" : "Terapeutisk"
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "446745002",
-                        "value" : "Diagnostisk med biopsi",
-                        "translations" : { }
+                        "value" : "Diagnostisk med biopsi"
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "73761001",
-                        "value" : "Diagnostisk uten biospi",
-                        "translations" : { }
+                        "value" : "Diagnostisk uten biospi"
                       } ]
                     } ]
                   } ],
@@ -24018,94 +23971,55 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I01",
-                        "value" : "Symptomer",
-                        "translations" : {
-                          "nb" : "Symptomer"
-                        }
+                        "value" : "Symptomer"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I02",
-                        "value" : "Polyppkontroll",
-                        "translations" : {
-                          "nb" : "Polyppkontroll"
-                        }
+                        "value" : "Polyppkontroll"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I03",
-                        "value" : "IBD-kontroll",
-                        "translations" : {
-                          "nb" : "IBD-kontroll"
-                        }
+                        "value" : "IBD-kontroll"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I04",
-                        "value" : "Funn ved tidligere koloskopi",
-                        "translations" : {
-                          "nb" : "Funn ved tidligere koloskopi"
-                        }
+                        "value" : "Funn ved tidligere koloskopi"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I05",
-                        "value" : "Funn ved annen undersøkelse",
-                        "translations" : {
-                          "nb" : "Funn ved annen undersøkelse"
-                        }
+                        "value" : "Funn ved annen undersøkelse"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I07",
-                        "value" : "Positiv iFOBT i screeningprogrammet",
-                        "translations" : {
-                          "nb" : "Positiv iFOBT i screeningprogrammet"
-                        }
+                        "value" : "Positiv iFOBT i screeningprogrammet"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I14",
-                        "value" : "Positiv FOBT utenom tarmscreeningprogram",
-                        "translations" : {
-                          "nb" : "Positiv FOBT utenom tarmscreeningprogram"
-                        }
+                        "value" : "Positiv FOBT utenom tarmscreeningprogram"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I08",
-                        "value" : "CRC-kontroll",
-                        "translations" : {
-                          "nb" : "CRC-kontroll"
-                        }
+                        "value" : "CRC-kontroll"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I09",
-                        "value" : "Familiær CRC",
-                        "translations" : {
-                          "nb" : "Familiær CRC"
-                        }
+                        "value" : "Familiær CRC"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I10",
-                        "value" : "Ufullstendig tidligere koloskopi",
-                        "translations" : {
-                          "nb" : "Ufullstendig tidligere koloskopi"
-                        }
+                        "value" : "Ufullstendig tidligere koloskopi"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I11",
-                        "value" : "Screening utenom program",
-                        "translations" : {
-                          "nb" : "Screening utenom program"
-                        }
+                        "value" : "Screening utenom program"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I12",
-                        "value" : "Divertikulitt",
-                        "translations" : {
-                          "nb" : "Divertikulitt"
-                        }
+                        "value" : "Divertikulitt"
                       }, {
                         "terminologyId" : "SCREENIT-INDICATION",
                         "code" : "I13",
-                        "value" : "Appendisitt",
-                        "translations" : {
-                          "nb" : "Appendisitt"
-                        }
+                        "value" : "Appendisitt"
                       } ]
                     } ]
                   } ],
@@ -24172,10 +24086,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "245424001",
-                        "value" : "Region av tykktarmen",
-                        "translations" : {
-                          "nb" : "Region av tykktarmen"
-                        }
+                        "value" : "Region av tykktarmen"
                       } ]
                     } ]
                   } ],
@@ -24207,33 +24118,27 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "10031000202109",
-                        "value" : "Ingen oppfølging",
-                        "translations" : { }
+                        "value" : "Ingen oppfølging"
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "10041000202103",
-                        "value" : "Avventer histologi",
-                        "translations" : { }
+                        "value" : "Avventer histologi"
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "703993001",
-                        "value" : "Ny koloskopi",
-                        "translations" : { }
+                        "value" : "Ny koloskopi"
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "10051000202100",
-                        "value" : "Viderehenvisning til vurdering/behandling",
-                        "translations" : { }
+                        "value" : "Viderehenvisning til vurdering/behandling"
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "10061000202102",
-                        "value" : "CT kolografi",
-                        "translations" : { }
+                        "value" : "CT kolografi"
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "74964007",
-                        "value" : "Annet",
-                        "translations" : { }
+                        "value" : "Annet"
                       } ]
                     } ]
                   } ],
@@ -24324,8 +24229,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "69201005",
-                        "value" : "Endoskopi",
-                        "translations" : { }
+                        "value" : "Endoskopi"
                       } ]
                     } ]
                   } ],
@@ -25358,8 +25262,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "90412006",
-                    "value" : "Colonoscope, device (physical object)",
-                    "translations" : { }
+                    "value" : "Colonoscope, device (physical object)"
                   } ]
                 } ]
               } ],
@@ -25622,8 +25525,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "307663000",
-                    "value" : "Undersøkelse av kolon",
-                    "translations" : { }
+                    "value" : "Undersøkelse av kolon"
                   } ]
                 } ]
               } ],
@@ -25655,8 +25557,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "284365007",
-                    "value" : "Undersøkelse av kroppsdel",
-                    "translations" : { }
+                    "value" : "Undersøkelse av kroppsdel"
                   } ]
                 } ]
               } ],
@@ -25948,22 +25849,23 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "783796000",
-                    "value" : "Struktur av lumen i kolon",
-                    "translations" : { }
+                    "value" : "Struktur av lumen i kolon"
                   } ]
                 } ]
               } ],
@@ -25993,7 +25895,7 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_BOOLEAN",
-                  "rmTypeName" : "Boolean",
+                  "rmTypeName" : "BOOLEAN",
                   "occurrences" : "1..1",
                   "constraint" : [ true ]
                 } ]
@@ -26062,7 +25964,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Lumen normal",
-            "description" : "Utsagn om at ingen avvik var oppdaget ved undersøkelsen (U.a.).",
+            "description" : "Ingen avvik eller funn i lumen. Lumen er uten anmerkning. ",
             "comment" : "Registrer som Sann dersom ingen avvik ble oppdaget ved undersøkelsen. Spesifikke utsagn om undersøkelsen kan registreres i dataelementet \"Fortolkning\". Registrerer man \"Uten anmerkning\", vil registrering av andre dataelementer i arketypen være overflødig med unntak av dataelementet \"Fortolkning\", som kan være nyttig om en har behov for en normalbeskrivelse."
           },
           "at0003.1" : {
@@ -26187,8 +26089,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "71854001",
-                    "value" : "Kolon",
-                    "translations" : { }
+                    "value" : "Kolon"
                   } ]
                 } ]
               } ],
@@ -27340,48 +27241,39 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "787127007",
-                    "value" : "Biopsitang",
-                    "translations" : { }
+                    "value" : "Biopsitang"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "10691000202104",
-                    "value" : "Endoskopisk muscoal reseksjon (EMR) teknikk (injeksjon av submukosal væske)",
-                    "translations" : { }
+                    "value" : "Endoskopisk muscoal reseksjon (EMR) teknikk (injeksjon av submukosal væske)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "10701000202104",
-                    "value" : "Kald slynge in toto",
-                    "translations" : { }
+                    "value" : "Kald slynge in toto"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "10731000202107",
-                    "value" : "Kald slynge piecemeal",
-                    "translations" : { }
+                    "value" : "Kald slynge piecemeal"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "10721000202105",
-                    "value" : "Diatermislynge in toto",
-                    "translations" : { }
+                    "value" : "Diatermislynge in toto"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "10711000202102",
-                    "value" : "Diatermislynge piecemeal",
-                    "translations" : { }
+                    "value" : "Diatermislynge piecemeal"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "10351000202102",
-                    "value" : "Undervanns EMR (U-EMR)",
-                    "translations" : { }
+                    "value" : "Undervanns EMR (U-EMR)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "10391000132108",
-                    "value" : "Endoskopisk submuscoal disseksjon (ESD)",
-                    "translations" : { }
+                    "value" : "Endoskopisk submuscoal disseksjon (ESD)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "74964007",
-                    "value" : "Annen metode (spesifiser i fritekst)",
-                    "translations" : { }
+                    "value" : "Annen metode (spesifiser i fritekst)"
                   } ]
                 } ]
               } ],
@@ -27419,58 +27311,47 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "85774003",
-                    "value" : "Terminale ileum",
-                    "translations" : { }
+                    "value" : "Terminale ileum"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "32713005",
-                    "value" : "Cøkum",
-                    "translations" : { }
+                    "value" : "Cøkum"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "9040008",
-                    "value" : "Ascendens",
-                    "translations" : { }
+                    "value" : "Ascendens"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "48338005",
-                    "value" : "Høyre fleksur",
-                    "translations" : { }
+                    "value" : "Høyre fleksur"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "485005",
-                    "value" : "Transversum",
-                    "translations" : { }
+                    "value" : "Transversum"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "72592005",
-                    "value" : "Venstre fleksur",
-                    "translations" : { }
+                    "value" : "Venstre fleksur"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "32622004",
-                    "value" : "Descendens",
-                    "translations" : { }
+                    "value" : "Descendens"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "60184004",
-                    "value" : "Sigmoid",
-                    "translations" : { }
+                    "value" : "Sigmoid"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "49832006",
-                    "value" : "Rektosigmoid overgang",
-                    "translations" : { }
+                    "value" : "Rektosigmoid overgang"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "34402009",
-                    "value" : "Rektum",
-                    "translations" : { }
+                    "value" : "Rektum"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "53505006",
-                    "value" : "Analkanal/anus",
-                    "translations" : { }
+                    "value" : "Analkanal/anus"
                   } ]
                 } ]
               } ],
@@ -28023,8 +27904,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "362157008",
-                    "value" : "Kolon mucosa",
-                    "translations" : { }
+                    "value" : "Kolon mucosa"
                   } ]
                 } ]
               } ],
@@ -28094,18 +27974,15 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "34000006",
-                    "value" : "Crohns sykdom (segment med makroskopisk inflammasjon)",
-                    "translations" : { }
+                    "value" : "Crohns sykdom (segment med makroskopisk inflammasjon)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "64766004",
-                    "value" : "Ulcerøs kolitt",
-                    "translations" : { }
+                    "value" : "Ulcerøs kolitt"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "9551000202102",
-                    "value" : "IBD-U (uklassifisert IBD)",
-                    "translations" : { }
+                    "value" : "IBD-U (uklassifisert IBD)"
                   } ]
                 } ]
               } ],
@@ -28323,8 +28200,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "362157008",
-                    "value" : "Kolon mucosa",
-                    "translations" : { }
+                    "value" : "Kolon mucosa"
                   } ]
                 } ]
               } ],
@@ -28388,18 +28264,15 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "10811000202109",
-                    "value" : "Proktitt",
-                    "translations" : { }
+                    "value" : "Proktitt"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "445243001",
-                    "value" : "Venstresidig kolitt",
-                    "translations" : { }
+                    "value" : "Venstresidig kolitt"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "444548001",
-                    "value" : "Totalkolitt",
-                    "translations" : { }
+                    "value" : "Totalkolitt"
                   } ]
                 } ]
               } ],
@@ -28759,8 +28632,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "362157008",
-                    "value" : "Kolon mucosa",
-                    "translations" : { }
+                    "value" : "Kolon mucosa"
                   } ]
                 } ]
               } ],
@@ -29630,8 +29502,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "56402004",
-                    "value" : "Biopsi av slimhinne",
-                    "translations" : { }
+                    "value" : "Biopsi av slimhinne"
                   } ]
                 } ]
               } ],
@@ -29663,8 +29534,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "10071000202106",
-                    "value" : "Seriebiopsier",
-                    "translations" : { }
+                    "value" : "Seriebiopsier"
                   } ]
                 } ]
               } ],
@@ -29696,48 +29566,39 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "85774003",
-                    "value" : "Terminale ileum (0)",
-                    "translations" : { }
+                    "value" : "Terminale ileum (0)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "32713005",
-                    "value" : "Cøkum (I)",
-                    "translations" : { }
+                    "value" : "Cøkum (I)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "9040008",
-                    "value" : "Ascendens (II)",
-                    "translations" : { }
+                    "value" : "Ascendens (II)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "48338005",
-                    "value" : "Høyre fleksur (III)",
-                    "translations" : { }
+                    "value" : "Høyre fleksur (III)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "485005",
-                    "value" : "Transversum (IV)",
-                    "translations" : { }
+                    "value" : "Transversum (IV)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "72592005",
-                    "value" : "Venstre fleksur (V)",
-                    "translations" : { }
+                    "value" : "Venstre fleksur (V)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "32622004",
-                    "value" : "Descendens (VI)",
-                    "translations" : { }
+                    "value" : "Descendens (VI)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "60184004",
-                    "value" : "Sigmoideum (VII)",
-                    "translations" : { }
+                    "value" : "Sigmoideum (VII)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "34402009",
-                    "value" : "Rektum (VIII)",
-                    "translations" : { }
+                    "value" : "Rektum (VIII)"
                   } ]
                 } ]
               } ],
@@ -30105,8 +29966,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "122644002",
-                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi",
-                    "translations" : { }
+                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi"
                   } ]
                 } ]
               } ],
@@ -30180,8 +30040,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "34402009",
-                    "value" : "Rektum",
-                    "translations" : { }
+                    "value" : "Rektum"
                   } ]
                 } ]
               } ],
@@ -31774,8 +31633,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "122644002",
-                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi",
-                    "translations" : { }
+                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi"
                   } ]
                 } ]
               } ],
@@ -31849,8 +31707,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "60184004",
-                    "value" : "Sigmoideum",
-                    "translations" : { }
+                    "value" : "Sigmoideum"
                   } ]
                 } ]
               } ],
@@ -33443,8 +33300,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "122644002",
-                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi",
-                    "translations" : { }
+                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi"
                   } ]
                 } ]
               } ],
@@ -33518,8 +33374,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "32622004",
-                    "value" : "Descendens",
-                    "translations" : { }
+                    "value" : "Descendens"
                   } ]
                 } ]
               } ],
@@ -35112,8 +34967,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "122644002",
-                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi",
-                    "translations" : { }
+                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi"
                   } ]
                 } ]
               } ],
@@ -35187,8 +35041,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "72592005",
-                    "value" : "Venstre fleskur",
-                    "translations" : { }
+                    "value" : "Venstre fleskur"
                   } ]
                 } ]
               } ],
@@ -36781,8 +36634,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "122644002",
-                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi",
-                    "translations" : { }
+                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi"
                   } ]
                 } ]
               } ],
@@ -36856,8 +36708,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "485005",
-                    "value" : "Transversum",
-                    "translations" : { }
+                    "value" : "Transversum"
                   } ]
                 } ]
               } ],
@@ -38450,8 +38301,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "122644002",
-                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi",
-                    "translations" : { }
+                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi"
                   } ]
                 } ]
               } ],
@@ -38525,8 +38375,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "48338005",
-                    "value" : "Høyre fleksur",
-                    "translations" : { }
+                    "value" : "Høyre fleksur"
                   } ]
                 } ]
               } ],
@@ -40119,8 +39968,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "122644002",
-                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi",
-                    "translations" : { }
+                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi"
                   } ]
                 } ]
               } ],
@@ -40194,8 +40042,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "9040008",
-                    "value" : "Ascendens",
-                    "translations" : { }
+                    "value" : "Ascendens"
                   } ]
                 } ]
               } ],
@@ -41788,8 +41635,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "122644002",
-                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi",
-                    "translations" : { }
+                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi"
                   } ]
                 } ]
               } ],
@@ -41863,8 +41709,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "32713005",
-                    "value" : "Cøkum",
-                    "translations" : { }
+                    "value" : "Cøkum"
                   } ]
                 } ]
               } ],
@@ -43457,8 +43302,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "122644002",
-                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi",
-                    "translations" : { }
+                    "value" : "Prøve fra tykktarmen oppnådd ved snittbiopsi"
                   } ]
                 } ]
               } ],
@@ -43532,8 +43376,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "85774003",
-                    "value" : "Terminale ileum",
-                    "translations" : { }
+                    "value" : "Terminale ileum"
                   } ]
                 } ]
               } ],
@@ -46616,8 +46459,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "85097005",
-                    "value" : "Sekundærdiagnose",
-                    "translations" : { }
+                    "value" : "Sekundærdiagnose"
                   } ]
                 } ]
               } ],
@@ -47397,8 +47239,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "73761001",
-                        "value" : "Koloskopi",
-                        "translations" : { }
+                        "value" : "Koloskopi"
                       } ]
                     } ]
                   } ],
@@ -47779,8 +47620,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "262134003",
-                    "value" : "Sekundærprosedyre",
-                    "translations" : { }
+                    "value" : "Sekundærprosedyre"
                   } ]
                 } ]
               } ],
@@ -47950,10 +47790,7 @@
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "SNOMED-CT",
                             "code" : "73761001",
-                            "value" : "Koloskopi",
-                            "translations" : {
-                              "nb" : "Koloskopi"
-                            }
+                            "value" : "Koloskopi"
                           } ]
                         } ]
                       } ],
