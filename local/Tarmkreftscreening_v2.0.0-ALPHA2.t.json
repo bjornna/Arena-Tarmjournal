@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "ce3fcb528ef5f6cdfeb39931aa93a2dd",
+      "MD5-CAM-1.0.1" : "0c323911ee8519eaad4b027e7337c18c",
       "PARENT:MD5-CAM-1.0.1" : "2735709779613B83B2C9552E76337013",
       "original_language" : "ISO_639-1::nb"
     },
@@ -27899,17 +27899,19 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "362157008",
@@ -27943,7 +27945,7 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_BOOLEAN",
-                  "rmTypeName" : "Boolean",
+                  "rmTypeName" : "BOOLEAN",
                   "occurrences" : "1..1",
                   "constraint" : [ true ]
                 } ]
@@ -28077,7 +28079,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Mucosa normal",
-            "description" : "Utsagn om at ingen avvik var oppdaget ved undersøkelsen (U.a.).",
+            "description" : "Angir at mucosa i tykktarmen er uten anmerkning",
             "comment" : "Registrer som Sann dersom ingen avvik ble oppdaget ved undersøkelsen. Spesifikke utsagn om undersøkelsen kan registreres i dataelementet \"Fortolkning\". Registrerer man \"Uten anmerkning\", vil registrering av andre dataelementer i arketypen være overflødig med unntak av dataelementet \"Fortolkning\", som kan være nyttig om en har behov for en normalbeskrivelse."
           },
           "at0006.2" : {
@@ -28092,6 +28094,13 @@
             "code" : "at0007.1",
             "text" : "Fritekstfelt for nærmere spesifisering av MUCOSA",
             "description" : "Ytterligere fritekst om funn ved undersøkelsen, som ikke dekkes av andre elementer."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Undersøkt organsystem eller struktur",
+            "description" : "Identifisering av det undersøkte organsystemet eller anatomiske strukturen.",
+            "comment" : "Her har vi kanskje brukt feil kode. Burde gått ett nivå opp til 68502009 |Kolonslimhinne| \n"
           }
         }
       },
