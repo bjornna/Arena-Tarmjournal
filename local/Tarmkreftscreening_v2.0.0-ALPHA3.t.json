@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "33b3da4523217ae8a600821e196059da",
+      "MD5-CAM-1.0.1" : "83c1cb73004bb413993d4fbc8029facd",
       "PARENT:MD5-CAM-1.0.1" : "2735709779613B83B2C9552E76337013",
       "original_language" : "ISO_639-1::nb"
     },
@@ -4997,12 +4997,12 @@
                         "value" : "Picoprep/Citrafleet"
                       }, {
                         "terminologyId" : "SCREENIT-PURGATIVE",
-                        "code" : "02",
-                        "value" : "Laxabon"
-                      }, {
-                        "terminologyId" : "SCREENIT-PURGATIVE",
                         "code" : "04",
                         "value" : "Plenvu"
+                      }, {
+                        "terminologyId" : "SCREENIT-PURGATIVE",
+                        "code" : "02",
+                        "value" : "Laxabon"
                       } ]
                     } ]
                   } ],
@@ -28287,16 +28287,24 @@
                   "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "10811000202109",
-                    "value" : "Proktitt"
+                    "code" : "444548001",
+                    "value" : "Totalkolitt"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "445243001",
                     "value" : "Venstresidig kolitt"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "444548001",
-                    "value" : "Totalkolitt"
+                    "code" : "41364008",
+                    "value" : "Rektosigmoiditt"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "10811000202109",
+                    "value" : "Proktitt"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "64226004",
+                    "value" : "Kolitt"
                   } ]
                 } ]
               } ],
