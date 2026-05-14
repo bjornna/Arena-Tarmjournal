@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "3f7b3c676358e5fec6144c3e8f20750a",
+      "MD5-CAM-1.0.1" : "e136baca7547dc9fe513b46b140a51af",
       "PARENT:MD5-CAM-1.0.1" : "2735709779613B83B2C9552E76337013",
       "original_language" : "ISO_639-1::nb"
     },
@@ -49211,12 +49211,12 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "no.dips.colonscopy.purgative.screening"
+                                "value" : "no.dips.colonscopy.screening"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "no.dips.colonscopy.purgative.screening" ],
+                              "selectedTerminologies" : [ "no.dips.colonscopy.screening" ],
                               "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "no.dips.colonscopy.purgative.screening",
+                                "terminologyId" : "no.dips.colonscopy.screening",
                                 "code" : "PURGATIVE",
                                 "value" : "Bruk av tømmingsmiddel"
                               } ]
@@ -49318,6 +49318,13 @@
             "text" : "Kartlegging av tømmingsmiddel",
             "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge bruken av legemidler.",
             "comment" : "Svarene kan være selvrapporterte."
+          },
+          "at0027.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027.1",
+            "text" : "Tømmingsmiddel",
+            "description" : "Finnes det noen tidligere legemiddelbruk som er innenfor kartleggingsformålet?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           }
         },
         "de" : { },
