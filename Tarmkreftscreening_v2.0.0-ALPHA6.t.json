@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "f5e72f1a49ac7d2dc45e72b89516d29c",
+      "MD5-CAM-1.0.1" : "2c6e1c1735e80365329a87519e7babec",
       "PARENT:MD5-CAM-1.0.1" : "2735709779613B83B2C9552E76337013",
       "original_language" : "ISO_639-1::nb"
     },
@@ -26302,7 +26302,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "3001c830600c5b3f9f2eb1d9941ff52e"
+        "PARENT:MD5-CAM-1.0.1" : "1258cab061319a748a628b542da9bd03"
       },
       "details" : {
         "nb" : {
@@ -26716,6 +26716,35 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0011.13",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0029.1",
           "attributes" : [ {
@@ -26866,6 +26895,18 @@
             "code" : "at0011.12",
             "text" : "Metode for fjerning eller vevsprøve av funnet #11",
             "description" : "*"
+          },
+          "at0011.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.13",
+            "text" : "Metode for fjerning eller vevsprøve av funnet #12",
+            "description" : ""
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "en" : {
@@ -26934,6 +26975,18 @@
             "code" : "at0011.12",
             "text" : "Metode for fjerning eller vevsprøve av funnet #11",
             "description" : "*"
+          },
+          "at0011.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.12",
+            "text" : "Metode for fjerning eller vevsprøve av funnet #11 (2)",
+            "description" : "*"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (nb)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         }
       },
@@ -26943,7 +26996,13 @@
         }
       },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0054" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "44aa4eef-9ffb-3c37-b072-a2caf333e9e1",
