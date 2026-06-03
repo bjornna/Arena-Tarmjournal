@@ -34,7 +34,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"3001c830600c5b3f9f2eb1d9941ff52e">
+		["MD5-CAM-1.0.1"] = <"1258cab061319a748a628b542da9bd03">
 		["build_uid"] = <"44aa4eef-9ffb-3c37-b072-a2caf333e9e1">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -110,7 +110,8 @@ definition
 							at0049,    -- EMR Piecemeal
 							at0050,    -- Undervanns EMR (U-EMR)
 							at0026,    -- Endoskopisk submuscoal disseksjon (ESD)
-							at0027]    -- Annen metode
+							at0027,    -- Annen metode
+							at0054]    -- EFTR (Endoskopisk fullveggsreseksjon)
 						}
 					}
 				}
@@ -398,6 +399,10 @@ ontology
 					text = <"Glassnummer">
 					description = <"Glassnummer på beholderen som lesjonen ble lagt i. Dette nummeret er viktig for kobling mellom funn, vevsprøve og koblingen til svar i patologisystemet. ">
 				>
+				["at0054"] = <
+					text = <"EFTR (Endoskopisk fullveggsreseksjon)">
+					description = <"Poliklinisk endoskopisk metode som fjerner dype svulster eller vanskelige polypper i fordøyelseskanalen">
+				>
 			>
 		>
 		["en"] = <
@@ -610,10 +615,14 @@ ontology
 					text = <"*Glassnummer (nb)">
 					description = <"*Glassnummer på beholderen som lesjonen ble lagt i. Dette nummeret er viktig for kobling mellom funn, vevsprøve og koblingen til svar i patologisystemet.  (nb)">
 				>
+				["at0054"] = <
+					text = <"*EFTR (Endoskopisk fullveggsreseksjon) (nb)">
+					description = <"*Poliklinisk endoskopisk metode som fjerner dype svulster eller vanskelige polypper i fordøyelseskanalen (nb)">
+				>
 			>
 		>
 	>
-	term_binding = <
+	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
 				["at0001"] = <[SNOMED-CT::8961000202103]>
