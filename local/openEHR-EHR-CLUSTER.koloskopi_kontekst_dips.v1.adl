@@ -1,0 +1,146 @@
+archetype (adl_version=1.4; uid=7a3c2e1d-4f8b-4a2c-9d1e-5b6f8c3a2e4d)
+	openEHR-EHR-CLUSTER.koloskopi_kontekst_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2026-06-23">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"published">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Klassifisere den kliniske og administrative konteksten for en koloskopi, med formål om å styre synlighet og krav til utfylling i skjema.">
+			use = <"Brukes i koloskopi-dokumentasjonsmaler for å lede kliniker til riktig dokumentasjonssti avhengig av prosedyrekontekst.
+
+Dersom 'Type koloskopi' er satt til 'Klinisk', skal 'Pasientstatus' også angis. Skjemalogikk skal benytte disse verdiene til å vise eller skjule relevante seksjoner og til å sette krav til utfylling av aktuelle felt.
+
+Arketypen inneholder ikke kliniske funn og skal ikke brukes til å dokumentere prosedyredetaljer eller resultater.">
+			misuse = <"Skal ikke brukes til å dokumentere kliniske funn, prosedyredetaljer eller resultater fra kolonoskopien.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To classify the clinical and administrative context of a colonoscopy procedure, with the purpose of controlling field visibility and mandatory requirements in the documentation form.">
+			use = <"Used in colonoscopy documentation templates to guide the clinician to the appropriate documentation pathway depending on the procedure context.
+
+If 'Type of colonoscopy' is set to 'Clinical', 'Patient status' must also be specified. Form logic should use these values to show or hide relevant sections and to enforce mandatory field requirements.
+
+The archetype contains no clinical findings and must not be used to document procedure details or results.">
+			misuse = <"Must not be used to document clinical findings, procedure details or results from the colonoscopy.">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"ab8a13762845809d0ccdad83f4b22585">
+		["build_uid"] = <"cbef57a4-d9e8-3608-b82e-3abe06a5295d">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Koloskopi kontekst
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Type koloskopi
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Nasjonal tarmscreening
+							at0003]    -- Klinisk
+						}
+					}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Pasientstatus
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0005,    -- Inneliggende
+							at0006]    -- Elektivt
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Koloskopi kontekst">
+					description = <"Klassifisering av den kliniske og administrative konteksten for en koloskopi, brukt til å styre skjemanavigasjon og feltsynlighet.">
+				>
+				["at0001"] = <
+					text = <"Type koloskopi">
+					description = <"Angir om kolonoskopien gjennomføres som del av nasjonal tarmscreening eller som en klinisk prosedyre.">
+				>
+				["at0002"] = <
+					text = <"Nasjonal tarmscreening">
+					description = <"Kolonoskopien gjennomføres som del av det nasjonale tarmscreeningprogrammet.">
+				>
+				["at0003"] = <
+					text = <"Klinisk">
+					description = <"Kolonoskopien gjennomføres som en klinisk prosedyre utenfor screeningprogrammet. Pasientstatus skal angis.">
+				>
+				["at0004"] = <
+					text = <"Pasientstatus">
+					description = <"Angir pasientens status ved gjennomføringen av kolonoskopien. Skal kun angis dersom type koloskopi er 'Klinisk'.">
+				>
+				["at0005"] = <
+					text = <"Inneliggende">
+					description = <"Pasienten er innlagt ved sykehuset under gjennomføringen av kolonoskopien.">
+				>
+				["at0006"] = <
+					text = <"Elektivt">
+					description = <"Kolonoskopien gjennomføres som en planlagt poliklinisk prosedyre.">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Colonoscopy context">
+					description = <"Classification of the clinical and administrative context of a colonoscopy, used to drive form navigation and field visibility.">
+				>
+				["at0001"] = <
+					text = <"Type of colonoscopy">
+					description = <"Indicates whether the colonoscopy is performed as part of national colorectal cancer screening or as a clinical procedure.">
+				>
+				["at0002"] = <
+					text = <"National colorectal cancer screening">
+					description = <"The colonoscopy is performed as part of the national colorectal cancer screening programme.">
+				>
+				["at0003"] = <
+					text = <"Clinical">
+					description = <"The colonoscopy is performed as a clinical procedure outside the screening programme. Patient status must be specified.">
+				>
+				["at0004"] = <
+					text = <"Patient status">
+					description = <"Indicates the patient's status at the time of the colonoscopy. Should only be specified if type of colonoscopy is 'Clinical'.">
+				>
+				["at0005"] = <
+					text = <"Inpatient">
+					description = <"The patient is admitted to hospital during the colonoscopy.">
+				>
+				["at0006"] = <
+					text = <"Elective">
+					description = <"The colonoscopy is performed as a planned outpatient procedure.">
+				>
+			>
+		>
+	>
