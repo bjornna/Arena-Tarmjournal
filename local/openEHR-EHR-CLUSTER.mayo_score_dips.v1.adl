@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c917556a2ba1452750dd38e7ea50d8b8">
+		["MD5-CAM-1.0.1"] = <"680897270bc7e5b894ccdf4c8860defb">
 		["build_uid"] = <"14fa490a-bc4b-3d21-b98d-883ca4262ee2">
 	>
 
@@ -126,19 +126,19 @@ ontology
 				>
 				["at0013"] = <
 					text = <"Normal eller inaktiv sykdom">
-					description = <"Normal eller innaktiv sykdom">
+					description = <"Normal eller inaktiv sykdom">
 				>
 				["at0014"] = <
-					text = <"Erytem ,redusert kartegning">
-					description = <"Mild sykdom( Erytem,redusert kartegning)">
+					text = <"Erytem, redusert kartegning">
+					description = <"Mild sykdom (Erytem, redusert kartegning)">
 				>
 				["at0015"] = <
-					text = <"Utviskete kartegninger, ledbarhet,erosjoner">
-					description = <"Moderat sykdom(Utviskete kartegninger, ledbarhet,erosjoner)">
+					text = <"Utviskete kartegninger, erosjoner">
+					description = <"Moderat sykdom (Utviskete kartegninger, erosjoner)">
 				>
 				["at0016"] = <
 					text = <"Spontane slimhinneblødninger, ulcerasjoner">
-					description = <"Alvorlig sykdom(spontane slimhinneblødninger, ulcerasjoner)">
+					description = <"Alvorlig sykdom (Spontane slimhinneblødninger, ulcerasjoner)">
 				>
 				["at0017"] = <
 					text = <"Legens evaluering av sykdom">
