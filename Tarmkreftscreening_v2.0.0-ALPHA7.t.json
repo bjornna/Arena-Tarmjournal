@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "c4b415d14f4390da3157e632aff1790c",
+      "MD5-CAM-1.0.1" : "f617576f636c9e878ce3b5e593ada226",
       "PARENT:MD5-CAM-1.0.1" : "2735709779613B83B2C9552E76337013",
       "original_language" : "ISO_639-1::nb"
     },
@@ -26165,17 +26165,19 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "71854001",
@@ -28554,7 +28556,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "c917556a2ba1452750dd38e7ea50d8b8"
+        "PARENT:MD5-CAM-1.0.1" : "680897270bc7e5b894ccdf4c8860defb"
       },
       "details" : {
         "nb" : {
@@ -34505,7 +34507,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "ab8a13762845809d0ccdad83f4b22585"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Klassifisere den kliniske og administrative konteksten for en koloskopi, med formål om å styre synlighet og krav til utfylling i skjema.",
+          "keywords" : [ ],
+          "use" : "Brukes i koloskopi-dokumentasjonsmaler for å lede kliniker til riktig dokumentasjonssti avhengig av prosedyrekontekst.\n\nDersom 'Type koloskopi' er satt til 'Klinisk', skal 'Pasientstatus' også angis. Skjemalogikk skal benytte disse verdiene til å vise eller skjule relevante seksjoner og til å sette krav til utfylling av aktuelle felt.\n\nArketypen inneholder ikke kliniske funn og skal ikke brukes til å dokumentere prosedyredetaljer eller resultater.",
+          "misuse" : "Skal ikke brukes til å dokumentere kliniske funn, prosedyredetaljer eller resultater fra kolonoskopien.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To classify the clinical and administrative context of a colonoscopy procedure, with the purpose of controlling field visibility and mandatory requirements in the documentation form.",
+          "keywords" : [ ],
+          "use" : "Used in colonoscopy documentation templates to guide the clinician to the appropriate documentation pathway depending on the procedure context.\n\nIf 'Type of colonoscopy' is set to 'Clinical', 'Patient status' must also be specified. Form logic should use these values to show or hide relevant sections and to enforce mandatory field requirements.\n\nThe archetype contains no clinical findings and must not be used to document procedure details or results.",
+          "misuse" : "Must not be used to document clinical findings, procedure details or results from the colonoscopy.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.koloskopi_kontekst_dips.v1",
     "differential" : true,
