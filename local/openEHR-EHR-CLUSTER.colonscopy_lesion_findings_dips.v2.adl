@@ -34,7 +34,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"e91ebefa0700cd4d3eaa12cc31bfb4b2">
+		["MD5-CAM-1.0.1"] = <"5ecceb70acf0d9d5cb2749dac58da706">
 		["build_uid"] = <"44aa4eef-9ffb-3c37-b072-a2caf333e9e1">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -104,14 +104,14 @@ definition
 							at0020,    -- Biopsitang
 							at0021,    -- Endoskopisk muscoal reseksjon (EMR)
 							at0022,    -- Kald slynge in toto
-							at0023,    -- Kald slynge piecmeal
+							at0023,    -- Kald slynge piecemeal
 							at0024,    -- Diatermislynge in toto
-							at0025,    -- Diatermislynge piecmeal
+							at0025,    -- Diatermislynge piecemeal
 							at0049,    -- EMR Piecemeal
 							at0050,    -- Undervanns EMR (U-EMR)
 							at0026,    -- Endoskopisk submuscoal disseksjon (ESD)
-							at0027,    -- Annen metode
-							at0054]    -- Endoskopisk fullveggsreseksjon (EFTR)
+							at0054,    -- Endoskopisk fullveggsreseksjon (EFTR)
+							at0027]    -- Annen metode
 						}
 					}
 				}
@@ -277,7 +277,7 @@ ontology
 					description = <"*">
 				>
 				["at0023"] = <
-					text = <"Kald slynge piecmeal">
+					text = <"Kald slynge piecemeal">
 					description = <"*">
 				>
 				["at0024"] = <
@@ -285,7 +285,7 @@ ontology
 					description = <"*">
 				>
 				["at0025"] = <
-					text = <"Diatermislynge piecmeal">
+					text = <"Diatermislynge piecemeal">
 					description = <"*">
 				>
 				["at0026"] = <
@@ -493,7 +493,7 @@ ontology
 					description = <"**(nb)">
 				>
 				["at0023"] = <
-					text = <"Cold sling piecmeal">
+					text = <"*Kald slynge piecemeal (nb)">
 					description = <"*">
 				>
 				["at0024"] = <
@@ -501,7 +501,7 @@ ontology
 					description = <"**(nb)">
 				>
 				["at0025"] = <
-					text = <"Diathermy sling piecmeal">
+					text = <"*Diatermislynge piecemeal (nb)">
 					description = <"*">
 				>
 				["at0026"] = <
