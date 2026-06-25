@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b2a70a90dd714288a557c9a4401e57f7",
+      "MD5-CAM-1.0.1" : "e265d4a487fb3c0af1026d1881f8d19c",
       "PARENT:MD5-CAM-1.0.1" : "2735709779613B83B2C9552E76337013",
       "original_language" : "ISO_639-1::nb"
     },
@@ -33748,12 +33748,16 @@
                   "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "55572008",
-                    "value" : "Venstre kolon"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
                     "code" : "51342009",
                     "value" : "Høyre kolon"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "485005",
+                    "value" : "Transversum"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "55572008",
+                    "value" : "Venstre kolon"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "302508007",
