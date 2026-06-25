@@ -45,7 +45,7 @@ The archetype contains no clinical findings and must not be used to document pro
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"ab8a13762845809d0ccdad83f4b22585">
+		["MD5-CAM-1.0.1"] = <"144264d3057fa782b45651d02eee6ebf">
 		["build_uid"] = <"cbef57a4-d9e8-3608-b82e-3abe06a5295d">
 	>
 
@@ -69,7 +69,7 @@ definition
 						defining_code matches {
 							[local::
 							at0005,    -- Inneliggende
-							at0006]    -- Elektivt
+							at0006]    -- Poliklinisk
 						}
 					}
 				}
@@ -91,11 +91,11 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Nasjonal tarmscreening">
-					description = <"Kolonoskopien gjennomføres som del av det nasjonale tarmscreeningprogrammet.">
+					description = <"Koloskopien gjennomføres som del av det nasjonale tarmscreeningprogrammet.">
 				>
 				["at0003"] = <
 					text = <"Klinisk">
-					description = <"Kolonoskopien gjennomføres som en klinisk prosedyre utenfor screeningprogrammet. Pasientstatus skal angis.">
+					description = <"Koloskopien gjennomføres som en klinisk prosedyre utenfor screeningprogrammet. Pasientstatus skal angis.">
 				>
 				["at0004"] = <
 					text = <"Pasientstatus">
@@ -103,11 +103,11 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Inneliggende">
-					description = <"Pasienten er innlagt ved sykehuset under gjennomføringen av kolonoskopien.">
+					description = <"Pasienten er innlagt ved sykehuset under gjennomføringen av koloskopien.">
 				>
 				["at0006"] = <
-					text = <"Elektivt">
-					description = <"Kolonoskopien gjennomføres som en planlagt poliklinisk prosedyre.">
+					text = <"Poliklinisk">
+					description = <"Koloskopien gjennomføres som en planlagt poliklinisk prosedyre.">
 				>
 			>
 		>
@@ -123,11 +123,11 @@ ontology
 				>
 				["at0002"] = <
 					text = <"National colorectal cancer screening">
-					description = <"The colonoscopy is performed as part of the national colorectal cancer screening programme.">
+					description = <"*Koloskopien gjennomføres som del av det nasjonale tarmscreeningprogrammet. (nb)">
 				>
 				["at0003"] = <
 					text = <"Clinical">
-					description = <"The colonoscopy is performed as a clinical procedure outside the screening programme. Patient status must be specified.">
+					description = <"*Koloskopien gjennomføres som en klinisk prosedyre utenfor screeningprogrammet. Pasientstatus skal angis. (nb)">
 				>
 				["at0004"] = <
 					text = <"Patient status">
@@ -135,11 +135,11 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Inpatient">
-					description = <"The patient is admitted to hospital during the colonoscopy.">
+					description = <"*Pasienten er innlagt ved sykehuset under gjennomføringen av koloskopien. (nb)">
 				>
 				["at0006"] = <
-					text = <"Elective">
-					description = <"The colonoscopy is performed as a planned outpatient procedure.">
+					text = <"*Poliklinisk (nb)">
+					description = <"*Koloskopien gjennomføres som en planlagt poliklinisk prosedyre. (nb)">
 				>
 			>
 		>
